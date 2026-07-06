@@ -1,0 +1,15 @@
+/* main style sheet */
+body { background-color: oldlace;
+       color: black; 
+} 
+
+nav { background-color: black;
+      color: white; 
+      font-size: x-large;
+      margin-left: auto;
+      margin-right: auto;
+}
+nav a { text-decoration: none; }
+nav a:link { color: white; }
+nav a:visited { color: white; }
+nav a:hover { color: white; }

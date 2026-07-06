@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Jeopardy
+        {% endblock %}
+    </title>
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="/rules">Rules</a> | 
+            <a href="/about">About</a>
+            {% if user.is_authenticated %}
+                &nbsp;|&nbsp;<a href="jadmin/">Admin</a> 
+            {% endif %}
+        </nav>
+    </div>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
