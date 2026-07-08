@@ -1,0 +1,362 @@
+[
+{
+    "model": "jadmin.board",
+    "pk": 1,
+    "fields": {
+        "board_number": 1,
+        "category": "The Beatles",
+        "clue": "Liverpool",
+        "response": "What town are The Beatles from?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 2,
+    "fields": {
+        "board_number": 1,
+        "category": "The Beatles",
+        "clue": "John Paul George and Ringo",
+        "response": "Who are the Beatles?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 3,
+    "fields": {
+        "board_number": 1,
+        "category": "The Beatles",
+        "clue": "England",
+        "response": "What country are Beatles from",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 4,
+    "fields": {
+        "board_number": 1,
+        "category": "The Beatles",
+        "clue": "The White Album's real title",
+        "response": "What is \"The Beatles\"?",
+        "value": 400,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 5,
+    "fields": {
+        "board_number": 1,
+        "category": "The Beatles",
+        "clue": "After George divorced her she married Eric Clapton",
+        "response": "Who was Patty Boyd?",
+        "value": 500,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 6,
+    "fields": {
+        "board_number": 1,
+        "category": "Cars",
+        "clue": "Four",
+        "response": "How many wheels does a car have?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 7,
+    "fields": {
+        "board_number": 1,
+        "category": "Cars",
+        "clue": "Invented the assembly line",
+        "response": "Who was Henry Ford?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 8,
+    "fields": {
+        "board_number": 1,
+        "category": "Cars",
+        "clue": "Chevrolet Corvette ZR1X",
+        "response": "What car has the quickest Accelleration 0-60? (1.68 sec.)",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 9,
+    "fields": {
+        "board_number": 1,
+        "category": "Cars",
+        "clue": "Best sellin vehicle in the USA",
+        "response": "What is the Ford D-Series?",
+        "value": 400,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 10,
+    "fields": {
+        "board_number": 1,
+        "category": "Cars",
+        "clue": "best selling sedan in USA",
+        "response": "What is the Toyota Camary?",
+        "value": 500,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 11,
+    "fields": {
+        "board_number": 1,
+        "category": "Capitals",
+        "clue": "Columbus",
+        "response": "What is the capital of Ohio?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 12,
+    "fields": {
+        "board_number": 1,
+        "category": "Capitals",
+        "clue": "Sacramento",
+        "response": "What is the capital of Califormia?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 13,
+    "fields": {
+        "board_number": 1,
+        "category": "Capitals",
+        "clue": "Yerevan",
+        "response": "What is the capital of Armenia?",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 14,
+    "fields": {
+        "board_number": 1,
+        "category": "Capitals",
+        "clue": "baku",
+        "response": "What is the capital of Azerbaijan?",
+        "value": 400,
+        "staus": "400"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 15,
+    "fields": {
+        "board_number": 1,
+        "category": "Capitals",
+        "clue": "Kabul",
+        "response": "What is the capital of Afghanistan?",
+        "value": 500,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 16,
+    "fields": {
+        "board_number": 1,
+        "category": "Ethnic Foods",
+        "clue": "Fish and Chicps",
+        "response": "What is a popular food in England?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 17,
+    "fields": {
+        "board_number": 1,
+        "category": "Ethnic Foods",
+        "clue": "Kabuli Palaw",
+        "response": "What is the national dish of Afghanistan?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 18,
+    "fields": {
+        "board_number": 1,
+        "category": "Ethnic Foods",
+        "clue": "Arepas",
+        "response": "What is a popular dish in Colombia?",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 19,
+    "fields": {
+        "board_number": 1,
+        "category": "Ethnic Foods",
+        "clue": "Sushi",
+        "response": "What is a staple of japan?",
+        "value": 400,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 20,
+    "fields": {
+        "board_number": 1,
+        "category": "Ethnic Foods",
+        "clue": "Lahmajun",
+        "response": "What is referred to as Armenian Pizza?",
+        "value": 500,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 21,
+    "fields": {
+        "board_number": 1,
+        "category": "Science",
+        "clue": "-40 degrees",
+        "response": "At what temperature are Celsius and Fahrenheit scales equal?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 22,
+    "fields": {
+        "board_number": 1,
+        "category": "Science",
+        "clue": "About 8 minutes and 20 seconds",
+        "response": "how long does it take sunlight to reach the Earth?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 23,
+    "fields": {
+        "board_number": 1,
+        "category": "Science",
+        "clue": "The skin",
+        "response": "What organ of the human body is the largest?",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 24,
+    "fields": {
+        "board_number": 1,
+        "category": "Science",
+        "clue": "The platypus and the echidna",
+        "response": "What two mamals lay eggs?",
+        "value": 400,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 25,
+    "fields": {
+        "board_number": 1,
+        "category": "Science",
+        "clue": "The blue whale",
+        "response": "What is the largest mamal on Earth?",
+        "value": 500,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 26,
+    "fields": {
+        "board_number": 1,
+        "category": "Movies",
+        "clue": "The cowboy doll in Toy Story",
+        "response": "Who is Woody?",
+        "value": 100,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 27,
+    "fields": {
+        "board_number": 1,
+        "category": "Movies",
+        "clue": "A green ogre reluctantly befriends a talking donkey in Shrek",
+        "response": "Who is Shrek?",
+        "value": 200,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 28,
+    "fields": {
+        "board_number": 1,
+        "category": "Movies",
+        "clue": "The snowman's name in Frozen",
+        "response": "Who is Olaf",
+        "value": 300,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 29,
+    "fields": {
+        "board_number": 1,
+        "category": "Movies",
+        "clue": "Lion cub is exiled by his uncle Scar in The Lion King",
+        "response": "Who is Simba?",
+        "value": 400,
+        "staus": "on"
+    }
+},
+{
+    "model": "jadmin.board",
+    "pk": 30,
+    "fields": {
+        "board_number": 1,
+        "category": "Movies",
+        "clue": "The little boy that gets left behind during Christmas vacation in Home Alone",
+        "response": "Who is Kevin McCallister?",
+        "value": 500,
+        "staus": "on"
+    }
+}
+]
