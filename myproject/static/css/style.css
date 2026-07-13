@@ -14,75 +14,31 @@ nav a:link { color: white; }
 nav a:visited { color: white; }
 nav a:hover { color: white; }
 
-/* Overall Board Styling */
-body {
-    background-color: gray; /* page bkground */
-    font-family: 'ITC Korinna', 'Impact', Arial, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+table { margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
-.jeopardy-board {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 Categories */
-    gap: 15px;
-    max-width: 1200px;
-    width: 100%;
+.clue {     width:150px; 
+            height:110px; 	
+            background:#285DC8; 
+            color:#FFFF00; 
+            font-size:48px;
+            font-weight:bold;
+            padding-top:25px;
+            text-align:center;
+            cursor: pointer;
 }
+div.clue:hover {background:#487DE8;}
 
-/* Category Columns and Headers */
-.category-column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.category-column h3 {
-    background-color: #060ce9;
-    border: 3px solid black;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 15px 5px;
-    margin: 0;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* The Clue Buttons (Squares) */
-.clue-btn {
-    background-color: #060ce9;
-    color: #f1b521; /* Classic Jeopardy Yellow */
-    border: 3px solid black;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding: 25px 0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    text-shadow: 2px 2px 0px #000;
-}
-
-.clue-btn:hover:not(:disabled) {
-    background-color: #1e25ff;
-    transform: scale(1.02);
-}
-
-/* State when a question has already been clicked */
-.clue-btn:disabled {
-    background-color: #03056a;
-    color: transparent; /* Hides the dollar amount */
-    text-shadow: none;
-    cursor: not-allowed;
-    border: 3px solid #01044 scale(1);
-    box-shadow: inset 0 4px 10px rgba(0,0,0,0.8);
+.category { width:150px; 
+            height:110px; 	
+            background:#285DC8; 
+            color:#FFFFFF; 
+            font-size:32px;
+            font-weight:bold;
+            padding-top:25px;
+            text-align:center;
 }
 
 /* --- Clue Pop-up Modal --- */
@@ -117,6 +73,7 @@ body {
 #modal-text, #modal-answer {
     font-size: 3rem;
     text-transform: uppercase;
+    color: white;
     line-height: 1.4;
     margin: 30px 0;
     letter-spacing: 1px;
