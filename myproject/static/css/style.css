@@ -13,3 +13,132 @@ nav a { text-decoration: none; }
 nav a:link { color: white; }
 nav a:visited { color: white; }
 nav a:hover { color: white; }
+
+/* Overall Board Styling */
+body {
+    background-color: gray; /* page bkground */
+    font-family: 'ITC Korinna', 'Impact', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.jeopardy-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 Categories */
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Category Columns and Headers */
+.category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-column h3 {
+    background-color: #060ce9;
+    border: 3px solid black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px 5px;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* The Clue Buttons (Squares) */
+.clue-btn {
+    background-color: #060ce9;
+    color: #f1b521; /* Classic Jeopardy Yellow */
+    border: 3px solid black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 25px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 0px #000;
+}
+
+.clue-btn:hover:not(:disabled) {
+    background-color: #1e25ff;
+    transform: scale(1.02);
+}
+
+/* State when a question has already been clicked */
+.clue-btn:disabled {
+    background-color: #03056a;
+    color: transparent; /* Hides the dollar amount */
+    text-shadow: none;
+    cursor: not-allowed;
+    border: 3px solid #01044 scale(1);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.8);
+}
+
+/* --- Clue Pop-up Modal --- */
+.modal {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Dims the background board */
+}
+
+.modal-content {
+    background-color: #060ce9;
+    border: 5px solid #f1b521;
+    margin: 10% auto;
+    padding: 40px;
+    width: 60%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(241, 181, 33, 0.4);
+    animation: zoomIn 0.3s ease;
+}
+
+#modal-value {
+    color: #f1b521;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#modal-text, #modal-answer {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin: 30px 0;
+    letter-spacing: 1px;
+}
+
+.modal-content button {
+    background-color: #f1b521;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-content button:hover {
+    background-color: #ffca43;
+}
+
+/* Quick animation for the modal appearance */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
