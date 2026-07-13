@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    WEL Test Board
+{% endblock %}
+
+{% block content %}
+    <table>   
+	<tr>
+	   <td><div class="category" id="cat1">{{ cats.0 }}</div></td>
+       <td><div class="category" id="cat2">{{ cats.1 }}</div></td>
+       <td><div class="category" id="cat3">{{ cats.2 }}</div></td>
+       <td><div class="category" id="cat4">{{ cats.3 }}</div></td>
+       <td><div class="category" id="cat5">{{ cats.4 }}</div></td>
+       <td><div class="category" id="cat6">{{ cats.5 }}</div></td>
+	</tr>
+    <tr>     <!-- id and cClick argument =  key_clueNum_categoryNum board['key']['value']  -->
+	   <td><div class="clue" id="1_1" onclick="cClick('1_1')">${{board.key_1_1.value}}</div></td>
+	   <td><div class="clue" id="1_2" onclick="cClick('1_2')">${{board.key_1_2.value}}</div></td>
+	   <td><div class="clue" id="1_3" onclick="cClick('1_3')">${{board.key_1_3.value}}</div></td>
+	   <td><div class="clue" id="1_4" onclick="cClick('1_4')">${{board.key_1_4.value}}</div></td>
+       <td><div class="clue" id="1_5" onclick="cClick('1_5')">${{board.key_1_5.value}}</div></td>
+       <td><div class="clue" id="1_6" onclick="cClick('1_6')">${{board.key_1_6.value}}</div></td>
+	</tr>
+	<tr>
+	   <td><div class="clue" id="2_1" onclick="cClick('2_1')">${{board.key_2_1.value}}</div></td>
+	   <td><div class="clue" id="2_2" onclick="cClick('2_2')">${{board.key_2_2.value}}</div></td>
+	   <td><div class="clue" id="2_3" onclick="cClick('2_3')">${{board.key_2_3.value}}</div></td>
+	   <td><div class="clue" id="2_4" onclick="cClick('2_4')">${{board.key_2_4.value}}</div></td>
+       <td><div class="clue" id="2_5" onclick="cClick('2_5')">${{board.key_2_5.value}}</div></td>
+       <td><div class="clue" id="2_6" onclick="cClick('2_6')">${{board.key_2_6.value}}</div></td>
+	</tr>
+	<tr>
+	   <td><div class="clue" id="3_1" onclick="cClick('3_1')">${{board.key_3_1.value}}</div></td>
+	   <td><div class="clue" id="3_2" onclick="cClick('3_2')">${{board.key_3_2.value}}</div></td>
+	   <td><div class="clue" id="3_3" onclick="cClick('3_3')">${{board.key_3_3.value}}</div></td>
+	   <td><div class="clue" id="3_4" onclick="cClick('3_4')">${{board.key_3_4.value}}</div></td>
+       <td><div class="clue" id="3_5" onclick="cClick('3_5')">${{board.key_3_5.value}}</div></td>
+       <td><div class="clue" id="3_6" onclick="cClick('3_6')">${{board.key_3_6.value}}</div></td>
+	</tr>
+	<tr>
+	   <td><div class="clue" id="4_1" onclick="cClick('4_1')">${{board.key_4_1.value}}</div></td>
+	   <td><div class="clue" id="4_2" onclick="cClick('4_2')">${{board.key_4_2.value}}</div></td>
+	   <td><div class="clue" id="4_3" onclick="cClick('4_3')">${{board.key_4_3.value}}</div></td>
+	   <td><div class="clue" id="4_4" onclick="cClick('4_4')">${{board.key_4_4.value}}</div></td>
+       <td><div class="clue" id="4_5" onclick="cClick('4_5')">${{board.key_4_5.value}}</div></td>
+       <td><div class="clue" id="4_6" onclick="cClick('4_6')">${{board.key_4_6.value}}</div></td>
+	</tr>
+    <tr>
+	   <td><div class="clue" id="5_1" onclick="cClick('5_1')">${{board.key_5_1.value}}</div></td>
+	   <td><div class="clue" id="5_2" onclick="cClick('5_2')">${{board.key_5_2.value}}</div></td>
+	   <td><div class="clue" id="5_3" onclick="cClick('5_3')">${{board.key_5_3.value}}</div></td>
+	   <td><div class="clue" id="5_4" onclick="cClick('5_4')">${{board.key_5_4.value}}</div></td>
+       <td><div class="clue" id="5_5" onclick="cClick('5_5')">${{board.key_5_5.value}}</div></td>
+       <td><div class="clue" id="5_6" onclick="cClick('5_6')">${{board.key_5_6.value}}</div></td>
+	</tr>
+</table>
+
+<div id="clue-modal" style="display:none;" class="modal">
+    <div class="modal-content">
+        <h2 id="modal-value"></h2>
+        <p id="modal-text">Loading...</p>
+		<p id="modal-answer"></p>
+        <button onclick="showAnswer()">Show Answer</button>
+		<button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+{% endblock %}
