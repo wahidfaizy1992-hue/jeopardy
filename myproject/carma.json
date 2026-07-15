@@ -1,0 +1,577 @@
+[
+  {
+    "model": "jadmin.category",
+    "pk": 1,
+    "fields": {
+      "name": "LET'S PLAY BALL!"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "text": "To execute one of these, a batter squares his body to the pitcher & makes contact with the top half of the ball",
+      "answer": "a bunt",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "text": "If you're on third base, take your lead in this territory; you won't be out if you get hit by a batted ball",
+      "answer": "foul territory",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "text": "To play this position, you'll need the gear somewhat unfairly called 'the tools of ignorance'",
+      "answer": "catcher",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "text": "(Jimmy of the Clue Crew holds a baseball.)  To throw this pitch that brought fame to Carl Hubbell & Tug McGraw, grip the ball with two fingers, then turn your wrist in a corkscrew motion so it breaks the opposite way from a curveball",
+      "answer": "a screwball",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "text": "On a hit to right with a runner on second, the first baseman moves into the middle of the infield to become this 'man'",
+      "answer": "the cutoff man",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 2,
+    "fields": {
+      "name": "BIBLE BOOKS IN OTHER WORDS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "text": "Major divisions of plays, made up of scenes",
+      "answer": "acts",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "text": "1958 Leon Uris bestseller",
+      "answer": "Exodus",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "text": "Last name of record-setting hurdler & San Francisco 49er Renaldo",
+      "answer": "Nehemiah",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "text": "Daughter of president Cleveland & putative candy bar namesake",
+      "answer": "Ruth",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "text": "A dramatic disclosure or discovery",
+      "answer": "Revelation",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 3,
+    "fields": {
+      "name": "A HISTORY LESSON"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "text": "Scotland acquired these islands known for their pony in 1472 when a Norse king didn't pay his daughter's dowry to James III",
+      "answer": "the Shetlands",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 12,
+    "fields": {
+      "category": 3,
+      "text": "Wellington defeated the French in 1813 at Vitoria, Spain in the Peninsular War, the peninsula being this one",
+      "answer": "the Iberian",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 13,
+    "fields": {
+      "category": 3,
+      "text": "The FSA & NYA were part of the 'alphabet soup' of this 1930s U.S. government program",
+      "answer": "the New Deal",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 14,
+    "fields": {
+      "category": 3,
+      "text": "In 1185 Minamoto Yoritomo defeated the Taira clan in Japan & later was given this title meaning 'great general'",
+      "answer": "shogun",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 15,
+    "fields": {
+      "category": 3,
+      "text": "In 1795 most of Lithuania came under Russia's rule after the third partition of this country",
+      "answer": "Poland",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 4,
+    "fields": {
+      "name": "COOKING TERMS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 16,
+    "fields": {
+      "category": 4,
+      "text": "This 4-letter verb means to sprinkle food with a powdery ingredient like confectioner's sugar or cocoa",
+      "answer": "dust",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 17,
+    "fields": {
+      "category": 4,
+      "text": "To bias-slice carrots, cut them crosswise at this numerical angle",
+      "answer": "45 degrees",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 18,
+    "fields": {
+      "category": 4,
+      "text": "To cook food in a liquid that is held gently just below the boiling point",
+      "answer": "simmer",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 19,
+    "fields": {
+      "category": 4,
+      "text": "To brown or cook food quickly over high heat in a very small amount of fat",
+      "answer": "saute",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 20,
+    "fields": {
+      "category": 4,
+      "text": "This French term meaning 'everything in its place' refers to prepping and measuring ingredients before cooking",
+      "answer": "mise en place",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 5,
+    "fields": {
+      "name": "ECON 101"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 21,
+    "fields": {
+      "category": 5,
+      "text": "Neither gaseous or solid but this term, meaning 'in cash' or readily convertible into cash without a big loss of principal",
+      "answer": "liquid",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 22,
+    "fields": {
+      "category": 5,
+      "text": "In 2008 prices in Zimbabwe doubled every 24.7 hours due to hyper-this",
+      "answer": "inflation",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 23,
+    "fields": {
+      "category": 5,
+      "text": "The IMF, this U.N. agency, was founded in 1944 in part to stabilize currency exchange rates",
+      "answer": "the International Monetary Fund",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 24,
+    "fields": {
+      "category": 5,
+      "text": "In 1778, after detailing the 'invisible hand' guiding commerce, he became a commissioner of customs",
+      "answer": "Adam Smith",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 25,
+    "fields": {
+      "category": 5,
+      "text": "A theory of the trade-off between tax rates & what the government collects in tax revenues is seen in his curve",
+      "answer": "Arthur Laffer",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 6,
+    "fields": {
+      "name": "COLORFUL SPORTS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 26,
+    "fields": {
+      "category": 6,
+      "text": "The area surrounding a golf hole; the average size on the pro tours is about 6,000 square feet",
+      "answer": "the green",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 27,
+    "fields": {
+      "category": 6,
+      "text": "Notorious nickname of the Chicago team that threw the 1919 World Series",
+      "answer": "the Black Sox",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 28,
+    "fields": {
+      "category": 6,
+      "text": "Sun Life Stadium in Florida is home to the Miami Dolphins & this college bowl game",
+      "answer": "the Orange Bowl",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 29,
+    "fields": {
+      "category": 6,
+      "text": "This cup awarded to the Canadian Football League champion was named for a governor general of Canada",
+      "answer": "the Grey Cup",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 30,
+    "fields": {
+      "category": 6,
+      "text": "The only coach to win both an NCAA title & an NBA title, he took over the SMU basketball team in 2012",
+      "answer": "Larry Brown",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 7,
+    "fields": {
+      "name": "EUROPEAN COUNTRY BY REGIONS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 31,
+    "fields": {
+      "category": 7,
+      "text": "Arcadia,Corinth,Samos",
+      "answer": "Greece",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 32,
+    "fields": {
+      "category": 7,
+      "text": "Zug,Lucerne,Valais",
+      "answer": "Switzerland",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 33,
+    "fields": {
+      "category": 7,
+      "text": "Nordland,Oppland,Telemark",
+      "answer": "Norway",
+      "value": 600
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 34,
+    "fields": {
+      "category": 7,
+      "text": "Algarve,Alentejo,Beira",
+      "answer": "Portugal",
+      "value": 800
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 35,
+    "fields": {
+      "category": 7,
+      "text": "Slavonia,Istria,Dalmatia",
+      "answer": "Croatia",
+      "value": 1000
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 8,
+    "fields": {
+      "name": "POTPOURRI"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 36,
+    "fields": {
+      "category": 8,
+      "text": "Running back Jackson or actress Derek",
+      "answer": "Bo",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 37,
+    "fields": {
+      "category": 8,
+      "text": "When functioning properly, 'all systems are' this, meaning ready",
+      "answer": "go",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 38,
+    "fields": {
+      "category": 8,
+      "text": "It flows 405 miles to the Adriatic",
+      "answer": "the Po",
+      "value": 600
+
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 39,
+"fields": {
+"category": 8,
+"text": "In a Kipling work, it comes between 'Just' & 'Stories'",
+"answer": "So",
+"value": 800
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 40,
+"fields": {
+"category": 8,
+"text": "The innermost of Jupiter's 4 Galilean moons",
+"answer": "Io",
+"value": 1000
+}
+},
+{
+"model": "jadmin.category",
+"pk": 9,
+"fields": {
+"name": "WILL YOU STILL FEED ME?"
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 41,
+"fields": {
+"category": 9,
+"text": "Och aye! Haggamuggie is a simplified version of this, but with fish liver--sounds even better",
+"answer": "haggis",
+"value": 200
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 42,
+"fields": {
+"category": 9,
+"text": "Rachael Ray has a 22-minute recipe for burgers of this 'cordon bleu'; 10 minutes of prep & 12 to cook",
+"answer": "chicken",
+"value": 400
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 43,
+"fields": {
+"category": 9,
+"text": "From the Dutch for 'to curl', this doughnut-style dough is fried & brushed with a sweet glaze",
+"answer": "a cruller",
+"value": 600
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 44,
+"fields": {
+"category": 9,
+"text": "'Why don't you dance with me? I'm not no' this cheese described as 'devastatingly odorous'",
+"answer": "limburger",
+"value": 800
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 45,
+"fields": {
+"category": 9,
+"text": "'Polska' precedes the name of this sausage in a Hillshire Farm product",
+"answer": "kielbasa",
+"value": 1000
+}
+},
+{
+"model": "jadmin.category",
+"pk": 10,
+"fields": {
+"name": "WHEN? IN '64"
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 46,
+"fields": {
+"category": 10,
+"text": "In Feb. 1964 Italy said it was reviewing ideas from the world over to help save this landmark from collapse",
+"answer": "the Leaning Tower of Pisa",
+"value": 200
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 47,
+"fields": {
+"category": 10,
+"text": "Ford was feeling frisky on March 9 when this now-classic car rolled off the assembly line for the first time",
+"answer": "the Mustang",
+"value": 400
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 48,
+"fields": {
+"category": 10,
+"text": "This author gained notice--how could he not--leading a group called 'The Merry Pranksters' on a wild cross-country bus trip",
+"answer": "Ken Kesey",
+"value": 600
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 49,
+"fields": {
+"category": 10,
+"text": "In an October 14 surprise, he quit after a coup as head of the USSR due to--ahem--'advanced age and poor health'",
+"answer": "Khrushchev",
+"value": 800
+}
+},
+{
+"model": "jadmin.clue",
+"pk": 50,
+"fields": {
+"category": 10,
+"text": "A June 2014 'American Experience' covers young people working for civil rights in this state in what was called Freedom Summer",
+"answer": "Mississippi",
+"value": 1000
+}
+}
+]
+
+
+
+

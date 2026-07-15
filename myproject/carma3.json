@@ -1,0 +1,2225 @@
+[
+  {
+    "model": "jadmin.category",
+    "pk": 25,
+    "fields": {
+      "name": "WORLD CAPITAL CITIES"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 125,
+    "fields": {
+      "category": 25,
+      "text": "This French city is known globally as the 'City of Light' and features the Eiffel Tower.",
+      "answer": "Who is Paris?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 126,
+    "fields": {
+      "category": 25,
+      "text": "This UK capital stands on the River Thames and contains the historic Tower of London.",
+      "answer": "Who is London?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 127,
+    "fields": {
+      "category": 25,
+      "text": "This Italian city surrounds the independent enclave of Vatican City.",
+      "answer": "Who is Rome?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 128,
+    "fields": {
+      "category": 25,
+      "text": "This city is the capital of Japan and is the most populous metropolitan area in the world.",
+      "answer": "Who is Tokyo?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 129,
+    "fields": {
+      "category": 25,
+      "text": "This North American capital was built on the ruins of the Aztec capital, Tenochtitlan.",
+      "answer": "What is Mexico City?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 26,
+    "fields": {
+      "name": "ANIMAL KINGDOM"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 130,
+    "fields": {
+      "category": 26,
+      "text": "This large, black-and-white bear native to China eats almost exclusively bamboo.",
+      "answer": "What is Giant Panda?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 131,
+    "fields": {
+      "category": 26,
+      "text": "This striped big cat is the largest of all the wild cat species.",
+      "answer": "What is Tiger?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 132,
+    "fields": {
+      "category": 26,
+      "text": "This marine mammal is widely considered the largest animal ever known to have lived.",
+      "answer": "What is Blue Whale?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 133,
+    "fields": {
+      "category": 26,
+      "text": "This flightless bird is the largest living bird species on Earth and can run up to 43 mph.",
+      "answer": "What is Ostrich?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 234,
+    "fields": {
+      "category": 26,
+      "text": "This slow-moving mammal spends most of its life hanging upside down in the rainforest canopy.",
+      "answer": "What is Sloth?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 27,
+    "fields": {
+      "name": "HOLLYWOOD BLOCKBUSTERS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 135,
+    "fields": {
+      "category": 27,
+      "text": "In 1997, Leonardo DiCaprio and Kate Winslet starred in this tragic romance set on a sinking ship.",
+      "answer": "What is Titanic?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 136,
+    "fields": {
+      "category": 27,
+      "text": "This 1993 Steven Spielberg film brought cloned dinosaurs back to life on Isla Nublar.",
+      "answer": "What is Jurassic Park?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 137,
+    "fields": {
+      "category": 27,
+      "text": "This 2023 movie about the creator of the atomic bomb won the Oscar for Best Picture.",
+      "answer": "What is Oppenheimer?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 138,
+    "fields": {
+      "category": 27,
+      "text": "This director helmed the visually stunning sci-fi epics 'Inception' and 'Interstellar'.",
+      "answer": "Who is Christopher Nolan?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 139,
+    "fields": {
+      "category": 27,
+      "text": "Keanu Reeves plays a legendary assassin seeking vengeance for his dog in this action franchise.",
+      "answer": "What is John Wick?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 28,
+    "fields": {
+      "name": "PREMIUM TELEVISION"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 140,
+    "fields": {
+      "category": 28,
+      "text": "Great houses clash for control of the Iron Throne in this hit HBO fantasy series.",
+      "answer": "What is Game of Thrones?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 141,
+    "fields": {
+      "category": 28,
+      "text": "Bryan Cranston played chemistry teacher turned drug lord Walter White in this drama series.",
+      "answer": "What is Breaking Bad?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 142,
+    "fields": {
+      "category": 28,
+      "text": "This Netflix sci-fi series features a group of kids in Hawkins, Indiana fighting the Upside Down.",
+      "answer": "What is Stranger Things?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 143,
+    "fields": {
+      "category": 28,
+      "text": "Jeremy Strong and Brian Cox starred as members of the Roy family fighting for media control in this HBO drama.",
+      "answer": "What is Succession?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 144,
+    "fields": {
+      "category": 28,
+      "text": "This dystopian Hulu series is based on a classic 1985 novel by Margaret Atwood.",
+      "answer": "What is The Handmaid's Tale?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 29,
+    "fields": {
+      "name": "JAVASCRIPT FUNDAMENTALS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 145,
+    "fields": {
+      "category": 29,
+      "text": "Introduced in ES6, this keyword allows you to declare a block-scoped variable that cannot be reassigned.",
+      "answer": "What is const?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 146,
+    "fields": {
+      "category": 29,
+      "text": "This built-in method is used to execute a function once for each element in an array.",
+      "answer": "What is forEach?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 147,
+    "fields": {
+      "category": 29,
+      "text": "This 3-letter acronym represents the programming interface for web documents that JavaScript manipulates.",
+      "answer": "What is DOM (Document Object Model)?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 148,
+    "fields": {
+      "category": 29,
+      "text": "This mechanism allows an inner function to access variables from its outer enclosing scope even after the outer function finishes.",
+      "answer": "What is Closure?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 149,
+    "fields": {
+      "category": 29,
+      "text": "This JavaScript keyword refers to the object that is currently executing the code block.",
+      "answer": "What is this?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 30,
+    "fields": {
+      "name": "HTML BEYOND THE BASICS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 150,
+    "fields": {
+      "category": 30,
+      "text": "This standard HTML element is used to insert an image into a webpage.",
+      "answer": "What is <img>?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 151,
+    "fields": {
+      "category": 30,
+      "text": "This global attribute uniquely identifies an element within an HTML document.",
+      "answer": "What is id?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 152,
+    "fields": {
+      "category": 30,
+      "text": "This element tag is used to create a drop-down selection list in an HTML form.",
+      "answer": "What is <select>?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 153,
+    "fields": {
+      "category": 30,
+      "text": "This 4-letter attribute on an anchor tag specifies where to open the linked document, such as '_blank'.",
+      "answer": "What is target?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 154,
+    "fields": {
+      "category": 30,
+      "text": "Introduced in HTML5, this tag is used to embed independent, self-contained compositions like blog posts.",
+      "answer": "What is <article>?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 31,
+    "fields": {
+      "name": "DATABASE DESIGNS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 155,
+    "fields": {
+      "category": 31,
+      "text": "This 3-letter structured language is the standard used to manage and query relational databases.",
+      "answer": "What is SQL?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 156,
+    "fields": {
+      "category": 31,
+      "text": "This type of database key uniquely identifies each record in a specific table.",
+      "answer": "What is Primary Key?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 157,
+    "fields": {
+      "category": 31,
+      "text": "This popular open-source, NoSQL database stores data in flexible, JSON-like documents.",
+      "answer": "What is MongoDB?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 158,
+    "fields": {
+      "category": 31,
+      "text": "This database process removes data redundancy and ensures dependencies make sense across tables.",
+      "answer": "What is Normalization?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 159,
+    "fields": {
+      "category": 31,
+      "text": "In ACID transactions, the letter 'C' stands for this property, ensuring data remains valid after a transaction.",
+      "answer": "What is Consistency?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 32,
+    "fields": {
+      "name": "DJANGO WEB FRAMEWORK"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 160,
+    "fields": {
+      "category": 32,
+      "text": "Django is a high-level web framework written in this programming language.",
+      "answer": "What is Python?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 161,
+    "fields": {
+      "category": 32,
+      "text": "This Django architectural pattern replaces the traditional 'Controller' with a Template.",
+      "answer": "What is MVT (Model-View-Template)?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 162,
+    "fields": {
+      "category": 32,
+      "text": "This built-in Django command updates your database schema to match your current data models.",
+      "answer": "What is migrate?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 163,
+    "fields": {
+      "category": 32,
+      "text": "Django includes this functional component out-of-the-box to manage site content without building a custom backend interface.",
+      "answer": "What is Admin Interface?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 164,
+    "fields": {
+      "category": 32,
+      "text": "This tool inside Django acts as a bridge between database tables and Python objects, removing the need to write raw SQL.",
+      "answer": "What is ORM (Object-Relational Mapper)?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 33,
+    "fields": {
+      "name": "CSS STYLING"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 165,
+    "fields": {
+      "category": 33,
+      "text": "This CSS property is used to change the text color of an element.",
+      "answer": "What is color?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 166,
+    "fields": {
+      "category": 33,
+      "text": "This layout module provides an efficient way to align and distribute space among items in a single-dimensional container.",
+      "answer": "What is Flexbox?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 167,
+    "fields": {
+      "category": 33,
+      "text": "In the CSS Box Model, this area sits directly between the padding and the margin.",
+      "answer": "What is Border?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 168,
+    "fields": {
+      "category": 33,
+      "text": "This CSS rule allows developers to apply styles only when certain device characteristics, like screen width, match.",
+      "answer": "What is @media (Media Query)?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 169,
+    "fields": {
+      "category": 33,
+      "text": "This relative CSS unit is based on the font size of the root HTML element.",
+      "answer": "What is rem?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 34,
+    "fields": {
+      "name": "SITCOM SYNDICATION"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 170,
+    "fields": {
+      "category": 34,
+      "text": "Ross, Rachel, and Monica drink coffee at Central Perk in this 90s comedy hit.",
+      "answer": "What is Friends?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 171,
+    "fields": {
+      "category": 34,
+      "text": "Michael Scott manages the Scranton branch of Dunder Mifflin in this mockumentary.",
+      "answer": "What is The Office?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 172,
+    "fields": {
+      "category": 34,
+      "text": "Jerry, George, Elaine, and Kramer complain about nothing in this iconic New York sitcom.",
+      "answer": "What is Seinfeld?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 173,
+    "fields": {
+      "category": 34,
+      "text": "This animated comedy features a dad named Homer who works at a nuclear power plant.",
+      "answer": "What is The Simpsons?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 174,
+    "fields": {
+      "category": 34,
+      "text": "Ted Mosby tells his children an incredibly long story about how he met their mother in this sitcom.",
+      "answer": "What is How I Met Your Mother?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 35,
+    "fields": {
+      "name": "SCI-FI CINEMA"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 175,
+    "fields": {
+      "category": 35,
+      "text": "Luke Skywalker learns the ways of the Force to fight the Galactic Empire in this massive franchise.",
+      "answer": "What is Star Wars?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 176,
+    "fields": {
+      "category": 35,
+      "text": "Neo discovers reality is a simulated computer matrix in this 1999 cyberpunk film.",
+      "answer": "What is The Matrix?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 177,
+    "fields": {
+      "category": 35,
+      "text": "Timothée Chalamet plays Paul Atreides on the desert planet Arrakis in this Denis Villeneuve adaptation.",
+      "answer": "What is Dune?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 178,
+    "fields": {
+      "category": 35,
+      "text": "This 1982 Ridley Scott classic stars Harrison Ford as a cop hunting rogue replicants.",
+      "answer": "What is Blade Runner?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 179,
+    "fields": {
+      "category": 35,
+      "text": "This 1968 Stanley Kubrick masterpiece features a sentient computer named HAL 9000.",
+      "answer": "What is 2001: A Space Odyssey?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 36,
+    "fields": {
+      "name": "JAVASCRIPT FRAMEWORKS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 180,
+    "fields": {
+      "category": 36,
+      "text": "Created by Facebook, this component-based UI library uses a virtual DOM.",
+      "answer": "What is React?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 181,
+    "fields": {
+      "category": 36,
+      "text": "This Google-backed framework uses TypeScript and is known for enterprise-scale web applications.",
+      "answer": "What is Angular?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 182,
+    "fields": {
+      "category": 36,
+      "text": "This runtime environment allows developers to execute JavaScript on the server side.",
+      "answer": "What is Node.js?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 183,
+    "fields": {
+      "category": 36,
+      "text": "This progressive framework created by Evan You brands itself as approachable, versatile, and performant.",
+      "answer": "What is Vue.js?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 184,
+    "fields": {
+      "category": 36,
+      "text": "This lightweight compilation framework builds apps at build time rather than running a virtual DOM in the browser.",
+      "answer": "What is Svelte?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 37,
+    "fields": {
+      "name": "HTML5 APIS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 185,
+    "fields": {
+      "category": 37,
+      "text": "This HTML5 element is used to draw graphics on the fly via JavaScript scripting.",
+      "answer": "What is <canvas>?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 186,
+    "fields": {
+      "category": 37,
+      "text": "This storage API allows web applications to store data locally within the user's browser with no expiration date.",
+      "answer": "What is localStorage?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 187,
+    "fields": {
+      "category": 37,
+      "text": "This API allows a web application to determine the user's physical location if permission is granted.",
+      "answer": "What is Geolocation API?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 188,
+    "fields": {
+      "category": 37,
+      "text": "This script runs in the background, separate from the main browser thread, enabling offline capabilities and push notifications.",
+      "answer": "What is Service Worker?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 189,
+    "fields": {
+      "category": 37,
+      "text": "This API enables full, two-way, interactive communication sessions between a user's browser and a server.",
+      "answer": "What is WebSocket API?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 38,
+    "fields": {
+      "name": "SQL QUERIES"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 190,
+    "fields": {
+      "category": 38,
+      "text": "This SQL command is used to extract data from a database.",
+      "answer": "What is SELECT?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 191,
+    "fields": {
+      "category": 38,
+      "text": "This clause is used in SQL to filter records based on a specified condition.",
+      "answer": "What is WHERE?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 192,
+    "fields": {
+      "category": 38,
+      "text": "This keyword is used to combine rows from two or more tables based on a related column.",
+      "answer": "What is JOIN?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 193,
+    "fields": {
+      "category": 38,
+      "text": "This aggregate function returns the total number of rows that match a specified criterion.",
+      "answer": "What is COUNT?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 194,
+    "fields": {
+      "category": 38,
+      "text": "This statement is used to arrange identical data into groups, often used with aggregate functions.",
+      "answer": "What is GROUP BY?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 39,
+    "fields": {
+      "name": "DJANGO REST FRAMEWORK"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 195,
+    "fields": {
+      "category": 39,
+      "text": "DRF uses these components to convert complex data like querysets into native Python datatypes that can easily be rendered into JSON.",
+      "answer": "What are Serializers?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 196,
+    "fields": {
+      "category": 39,
+      "text": "This architectural style stands for Representational State Transfer and forms the basis of DRF APIs.",
+      "answer": "What is REST?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 197,
+    "fields": {
+      "category": 39,
+      "text": "This class-based component in DRF combines the logic for a set of related views into a single class.",
+      "answer": "What is ViewSet?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 198,
+    "fields": {
+      "category": 39,
+      "text": "This specific type of token authentication is commonly used in DRF to handle secure, stateless user sessions via a signed string.",
+      "answer": "What is JWT (JSON Web Token)?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 199,
+    "fields": {
+      "category": 39,
+      "text": "This type of class is used in DRF to restrict API access based on user status, like IsAuthenticated.",
+      "answer": "What is Permission Class?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 40,
+    "fields": {
+      "name": "ADVANCED CSS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 200,
+    "fields": {
+      "category": 40,
+      "text": "This property controls the stacking order of elements that overlap.",
+      "answer": "What is z-index?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 201,
+    "fields": {
+      "category": 40,
+      "text": "This keyword is used inside CSS declarations to give a property the highest priority, overriding all other selectors.",
+      "answer": "What is !important?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 202,
+    "fields": {
+      "category": 40,
+      "text": "This layout system uses columns and rows to build complex two-dimensional web designs.",
+      "answer": "What is CSS Grid?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 203,
+    "fields": {
+      "category": 40,
+      "text": "This property allows you to change the transparency level of an element.",
+      "answer": "What is opacity?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 204,
+    "fields": {
+      "category": 40,
+      "text": "Prefixing a variable name with these two characters defines a custom property in CSS.",
+      "answer": "What are -- (Double hyphens)?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 41,
+    "fields": {
+      "name": "REALITY TV"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 205,
+    "fields": {
+      "category": 41,
+      "text": "Castaways attempt to 'Outwit, Outplay, Outlast' each other on a remote island in this long-running series.",
+      "answer": "What is Survivor?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 206,
+    "fields": {
+      "category": 41,
+      "text": "Contestants hope to receive a roses from a single suitor in this romantic reality franchise.",
+      "answer": "What is The Bachelor?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 207,
+    "fields": {
+      "category": 41,
+      "text": "Gordon Ramsay screams at chefs competing for a head chef position in this intense culinary show.",
+      "answer": "What is Hell's Kitchen?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 208,
+    "fields": {
+      "category": 41,
+      "text": "This show tracks home renovators buying, fixing, and reselling houses for a profit.",
+      "answer": "What is Fixer Upper?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 209,
+    "fields": {
+      "category": 41,
+      "text": "Drag queens showcase their charisma, uniqueness, nerve, and talent to win RuPaul's crown.",
+      "answer": "What is RuPaul's Drag Race?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 42,
+    "fields": {
+      "name": "MOVIE MONSTERS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 210,
+    "fields": {
+      "category": 42,
+      "text": "This giant prehistoric radiation-breathing monster is known as the 'King of the Monsters'.",
+      "answer": "What is Godzilla?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 211,
+    "fields": {
+      "category": 42,
+      "text": "This massive ape climbs the Empire State Building while swatting at airplanes.",
+      "answer": "What is King Kong?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 212,
+    "fields": {
+      "category": 42,
+      "text": "Count Dracula is a famous movie monster belonging to this blood-sucking species.",
+      "answer": "What is Vampire?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 213,
+    "fields": {
+      "category": 42,
+      "text": "This creature, built from old body parts, is brought to life by lightning in a classic 1931 horror film.",
+      "answer": "What is Frankenstein's Monster?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 214,
+    "fields": {
+      "category": 42,
+      "text": "This terrifying shape-shifting entity takes the form of Pennywise the Dancing Clown.",
+      "answer": "What is It?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 43,
+    "fields": {
+      "name": "ASYNC JAVASCRIPT"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 215,
+    "fields": {
+      "category": 43,
+      "text": "This object represents the eventual completion or failure of an asynchronous operation.",
+      "answer": "What is a Promise?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 216,
+    "fields": {
+      "category": 43,
+      "text": "This modern keyword pair provides a cleaner syntax for working with Promises without chaining .then() blocks.",
+      "answer": "What is async / await?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 217,
+    "fields": {
+      "category": 43,
+      "text": "This global browser method is widely used to make network requests and returns a Promise.",
+      "answer": "What is fetch()?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 218,
+    "fields": {
+      "category": 43,
+      "text": "This browser mechanism executes tasks, handles events, and processes queued sub-tasks in JavaScript.",
+      "answer": "What is the Event Loop?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 219,
+    "fields": {
+      "category": 43,
+      "text": "This data structure holds asynchronous callbacks like setTimeout until the execution stack is empty.",
+      "answer": "What is the Callback Queue?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 44,
+    "fields": {
+      "name": "HTML FORMS & INPUTS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 220,
+    "fields": {
+      "category": 44,
+      "text": "Setting this attribute to 'password' on an input tag hides the typed characters from view.",
+      "answer": "What is type?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 221,
+    "fields": {
+      "category": 44,
+      "text": "This boolean attribute forces a user to fill out an input field before submitting a form.",
+      "answer": "What is required?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 222,
+    "fields": {
+      "category": 44,
+      "text": "This multi-line text input element allows for larger blocks of user text than a standard input tag.",
+      "answer": "What is <textarea>?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 223,
+    "fields": {
+      "category": 44,
+      "text": "This attribute associates a text label directly with an input field using the input's ID.",
+      "answer": "What is for?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 224,
+    "fields": {
+      "category": 44,
+      "text": "This form attribute specifies the HTTP method, such as GET or POST, used when sending data.",
+      "answer": "What is method?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 45,
+    "fields": {
+      "name": "NOSQL DATABASES"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 225,
+    "fields": {
+      "category": 45,
+      "text": "Unlike SQL, NoSQL databases generally do not use this rigid structure of rows and columns to organize data.",
+      "answer": "What is a Schema?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 226,
+    "fields": {
+      "category": 45,
+      "text": "This highly popular, open-source NoSQL database functions as an in-memory key-value data store.",
+      "answer": "What is Redis?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 227,
+    "fields": {
+      "category": 45,
+      "text": "This type of NoSQL database uses nodes and edges to store relationships between data points.",
+      "answer": "What is a Graph Database?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 228,
+    "fields": {
+      "category": 45,
+      "text": "This wide-column NoSQL database was originally developed by Facebook for inbox searches.",
+      "answer": "What is Cassandra?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 229,
+    "fields": {
+      "category": 45,
+      "text": "This foundational computer science theorem states a distributed database can only guarantee two out of Consistency, Availability, and Partition Tolerance.",
+      "answer": "What is the CAP Theorem?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 46,
+    "fields": {
+      "name": "DJANGO DEPLOYMENT"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 230,
+    "fields": {
+      "category": 46,
+      "text": "This fundamental setting variable must be set to False in a production Django application to avoid leaking error details.",
+      "answer": "What is DEBUG?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 231,
+    "fields": {
+      "category": 46,
+      "text": "This command gathers all your application's asset files into one production-ready directory.",
+      "answer": "What is collectstatic?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 232,
+    "fields": {
+      "category": 46,
+      "text": "This 4-letter acronym describes the standard web server interface used to run Python web applications like Django.",
+      "answer": "What is WSGI?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 233,
+    "fields": {
+      "category": 46,
+      "text": "This production HTTP server engine is commonly paired with Gunicorn to serve static assets and reverse-proxy requests to Django.",
+      "answer": "What is Nginx?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 234,
+    "fields": {
+      "category": 46,
+      "text": "This setting variable lists the specific host/domain names that the Django site can serve.",
+      "answer": "What is ALLOWED_HOSTS?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 47,
+    "fields": {
+      "name": "CSS PREPROCESSORS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 235,
+    "fields": {
+      "category": 47,
+      "text": "This highly popular CSS extension language stands for Syntactically Awesome Style Sheets.",
+      "answer": "What is SASS?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 236,
+    "fields": {
+      "category": 47,
+      "text": "Preprocessors must do this to your custom syntax files before a web browser can read them as standard CSS.",
+      "answer": "What is Compile?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 237,
+    "fields": {
+      "category": 47,
+      "text": "This feature allows you to clean up code by embedding CSS selectors inside one another to match your HTML hierarchy.",
+      "answer": "What is Nesting?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 238,
+    "fields": {
+      "category": 47,
+      "text": "This preprocessor feature allows you to define groups of CSS declarations that you can reuse throughout your stylesheet.",
+      "answer": "What is a Mixin?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 239,
+    "fields": {
+      "category": 47,
+      "text": "This directive allows you to share a set of CSS properties from one selector to another, helping keep code DRY.",
+      "answer": "What is @extend?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 48,
+    "fields": {
+      "name": "PYTHON PROGRAMMING"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 240,
+    "fields": {
+      "category": 48,
+      "text": "This built-in function returns the number of items in an object, such as characters in a string or elements in a list.",
+      "answer": "What is len()?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 241,
+    "fields": {
+      "category": 48,
+      "text": "This concise syntax format provides a clean way to create new lists based on existing iterables, wrapping the logic inside square brackets.",
+      "answer": "What is List Comprehension?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 242,
+    "fields": {
+      "category": 48,
+      "text": "Unlike languages that use curly braces, Python famously relies on this structural formatting requirement to define blocks of code.",
+      "answer": "What is Indentation?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 243,
+    "fields": {
+      "category": 48,
+      "text": "This keyword is used inside a Python function to create a generator, returning values one at a time instead of all at once.",
+      "answer": "What is yield?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 244,
+    "fields": {
+      "category": 48,
+      "text": "This 4-letter special method name, surrounded by double underscores, serves as the constructor to initialize new objects in a class.",
+      "answer": "What is __init__?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 49,
+    "fields": {
+      "name": "CARTOON NETWORK"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 245,
+    "fields": {
+      "category": 49,
+      "text": "Dexter hides a massive, high-tech facility from his parents right behind the bookcase in this room.",
+      "answer": "What is the Bedroom?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 246,
+    "fields": {
+      "category": 49,
+      "text": "Blossom, Bubbles, and Buttercup are collectively known as these superpowered kindergarteners.",
+      "answer": "Who are The Powerpuff Girls?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 247,
+    "fields": {
+      "category": 49,
+      "text": "Finn the Human and Jake the Dog explore the post-apocalyptic Land of Ooo in this series.",
+      "answer": "What is Adventure Time?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 248,
+    "fields": {
+      "category": 49,
+      "text": "This cowardly pink canine must constantly save his elderly owners, Muriel and Eustace, from paranormal threats.",
+      "answer": "Who is Courage the Cowardly Dog?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 249,
+    "fields": {
+      "category": 49,
+      "text": "This 10-year-old boy uses a mysterious alien watch called the Omnitrix to transform into different extraterrestrial heroes.",
+      "answer": "Who is Ben 10?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 50,
+    "fields": {
+      "name": "NICKELODEON"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 250,
+    "fields": {
+      "category": 50,
+      "text": "This optimistic yellow sea sponge lives in a pineapple under the sea in Bikini Bottom.",
+      "answer": "Who is SpongeBob SquarePants?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 251,
+    "fields": {
+      "category": 50,
+      "text": "Tommy, Chuckie, Phil, and Lil look at the world from a toddler's perspective in this classic 90s Nicktoon.",
+      "answer": "What is Rugrats?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 252,
+    "fields": {
+      "category": 50,
+      "text": "Aang must master control over air, water, earth, and fire to defeat the Fire Nation in this highly acclaimed animated series.",
+      "answer": "What is Avatar: The Last Airbender?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 253,
+    "fields": {
+      "category": 50,
+      "text": "Timmy Turner relies on Cosmo and Wanda, his two green and pink floating helpers, in this magical cartoon.",
+      "answer": "What is The Fairly OddParents?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 254,
+    "fields": {
+      "category": 50,
+      "text": "This young boy can turn invisible and fly after a lab accident transforms him into a half-ghost superhero.",
+      "answer": "Who is Danny Phantom?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 51,
+    "fields": {
+      "name": "DISNEY CHANNEL"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 255,
+    "fields": {
+      "category": 51,
+      "text": "Miley Stewart lives a double life as a regular high school student and a global pop superstar in this hit show.",
+      "answer": "What is Hannah Montana?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 256,
+    "fields": {
+      "category": 51,
+      "text": "This animated series features two stepbrothers spending their 104 days of summer vacation building wild inventions like rollercoasters.",
+      "answer": "What is Phineas and Ferb?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 257,
+    "fields": {
+      "category": 51,
+      "text": "Twins Dipper and Mabel Pines spend their summer unravelling local paranormal mysteries in this Oregon town.",
+      "answer": "What is Gravity Falls?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 258,
+    "fields": {
+      "category": 51,
+      "text": "Alex, Justin, and Max Russo compete against each other to see who gets to keep their magical powers in this New York-set sitcom.",
+      "answer": "What is Wizards of Waverly Place?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 259,
+    "fields": {
+      "category": 51,
+      "text": "This teenage cheerleader fights global villains alongside her sidekick Ron Stoppable and a naked mole-rat named Rufus.",
+      "answer": "What is Kim Possible?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 52,
+    "fields": {
+      "name": "SATURDAY MORNING CARTOONS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 260,
+    "fields": {
+      "category": 52,
+      "text": "This iconic dog uses a mystery-solving machine alongside Fred, Daphne, Velma, and Shaggy to unmask spooky villains.",
+      "answer": "What is Scooby-Doo?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 261,
+    "fields": {
+      "category": 52,
+      "text": "This classic cat-and-mouse duo spent decades violently outsmarting each other across various animated iterations.",
+      "answer": "What is Tom and Jerry?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 262,
+    "fields": {
+      "category": 52,
+      "text": "Heads up! These radical, pizza-loving sewer reptiles named Leonardo, Raphael, Donatello, and Michelangelo fought crime in NYC.",
+      "answer": "What is Teenage Mutant Ninja Turtles?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 263,
+    "fields": {
+      "category": 52,
+      "text": "This group of mutant superheroes led by Professor X fought for peace in a legendary 90s animated series featuring a heavy metal guitar theme song.",
+      "answer": "What is X-Men?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 264,
+    "fields": {
+      "category": 52,
+      "text": "He-Man defended the secrets of Castle Grayskull from this blue-skinned, staff-wielding villain on the planet Eternia.",
+      "answer": "Who is Skeletor?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 53,
+    "fields": {
+      "name": "GILLIGAN'S ISLAND"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 265,
+    "fields": {
+      "category": 53,
+      "text": "This bumbling first mate wears a red shirt and a white bucket hat while causing mishaps on the uncharted desert isle.",
+      "answer": "Who is Gilligan?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 266,
+    "fields": {
+      "category": 53,
+      "text": "The opening theme song notes that the fateful trip of the S.S. Minnow was originally scheduled for this many hours.",
+      "answer": "What is Three hours?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 267,
+    "fields": {
+      "category": 53,
+      "text": "Using little more than bamboo and coconuts, this brilliant academic crafts complex radios and gadgets for the castaways.",
+      "answer": "Who is The Professor (Roy Hinkley)?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 268,
+    "fields": {
+      "category": 53,
+      "text": "Thurston Howell III is a billionaire castaway who stranded himself on the island alongside this posh, nicknamed wife.",
+      "answer": "Who is Lovey?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 269,
+    "fields": {
+      "category": 53,
+      "text": "This glamorous Hollywood movie star stranded on the island is always seen in elegant evening gowns.",
+      "answer": "Who is Ginger Grant?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 54,
+    "fields": {
+      "name": "I LOVE LUCY"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 270,
+    "fields": {
+      "category": 54,
+      "text": "Lucy Ricardo is married to this fiery Cuban bandleader who frequently performs at the Tropicana club.",
+      "answer": "Who is Ricky Ricardo?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 271,
+    "fields": {
+      "category": 54,
+      "text": "In an iconic episode, Lucy and Ethel lose control while working on a fast-moving assembly line making this sweet treat.",
+      "answer": "What is Chocolate (or candy)?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 272,
+    "fields": {
+      "category": 54,
+      "text": "This health tonic commercial goes hilariously wrong when Lucy gets drunk off its high alcohol content while practicing her pitch.",
+      "answer": "What is Vitameatavegamin?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 273,
+    "fields": {
+      "category": 54,
+      "text": "Fred and Ethel, the Ricardos' close friends and landlords, have this last name.",
+      "answer": "What is Mertz?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 274,
+    "fields": {
+      "category": 54,
+      "text": "Before moving to a country home in Connecticut, the Ricardos live in an apartment building in this borough of New York City.",
+      "answer": "What is Manhattan?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 55,
+    "fields": {
+      "name": "ALL MY CHILDREN"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 275,
+    "fields": {
+      "category": 55,
+      "text": "Susan Lucci famously portrayed this legendary, multi-married grand dame of daytime television for over 41 years.",
+      "answer": "Who is Erica Kane?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 276,
+    "fields": {
+      "category": 55,
+      "text": "This fictional Pennsylvania suburb serves as the primary setting for the dramatic lives of the residents in this soap.",
+      "answer": "What is Pine Valley?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 277,
+    "fields": {
+      "category": 55,
+      "text": "This patriarch and doctor, played by David Canary, had an identical, gentler twin brother named Stuart Chandler.",
+      "answer": "Who is Adam Chandler?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 278,
+    "fields": {
+      "category": 55,
+      "text": "Before finding mega-stardom in Hollywood blockbusters like 'Black Panther', this actor played Reggie Montgomery on the show.",
+      "answer": "Who is Chadwick Boseman?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 279,
+    "fields": {
+      "category": 55,
+      "text": "This daytime supercouple, played by Kelly Ripa and Mark Consuelos, eventually eloped in real life too.",
+      "answer": "Who are Hayley Vaughan and Mateo Santos?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 56,
+    "fields": {
+      "name": "THE YOUNG & THE RESTLESS"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 280,
+    "fields": {
+      "category": 56,
+      "text": "The long-running, fierce corporate and personal rivalry on this show centers around the Abbott family and this other wealthy family.",
+      "answer": "What is the Newman family?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 281,
+    "fields": {
+      "category": 56,
+      "text": "This fictional Wisconsin city serves as the industrial and social backdrop for the show's billionaires and working class.",
+      "answer": "What is Genoa City?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 282,
+    "fields": {
+      "category": 56,
+      "text": "Eric Braeden has spent decades portraying this ruthless, cigar-chomping tycoon patriarch of Newman Enterprises.",
+      "answer": "Who is Victor Newman?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 283,
+    "fields": {
+      "category": 56,
+      "text": "This cosmetics giant is the primary business empire operated by the Abbott family.",
+      "answer": "What is Jabot Cosmetics?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 284,
+    "fields": {
+      "category": 56,
+      "text": "This iconic actress, who played the beloved, multi-married character Nikki Newman, first joined the soap way back in 1979.",
+      "answer": "Who is Melody Thomas Scott?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 57,
+    "fields": {
+      "name": "ONE LIFE TO LIVE"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 285,
+    "fields": {
+      "category": 57,
+      "text": "Erika Slezak won a record six Daytime Emmy Awards playing Victoria, the matriarch of this powerful family.",
+      "answer": "What is the Lord family?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 286,
+    "fields": {
+      "category": 57,
+      "text": "The dramatic events of this soap unfold in this fictional, affluent Pennsylvania town situated on the Llanview River.",
+      "answer": "What is Llanview?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 287,
+    "fields": {
+      "category": 57,
+      "text": "This villain-turned-antihero, played by Michael Easton, is a dark, brooding vampire who crossed over from the soap 'Port Charles'.",
+      "answer": "Who is Caleb Morley (or John McBain)?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 288,
+    "fields": {
+      "category": 57,
+      "text": "Before playing the MCU's Hawkeye, this actor spent the late 90s portraying the troubled teenager Jacked Apple.",
+      "answer": "Who is Jeremy Renner?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 289,
+    "fields": {
+      "category": 57,
+      "text": "Victoria Lord famously suffered from DID, a psychological condition known by this 3-letter acronym.",
+      "answer": "What is DID (Dissociative Identity Disorder)?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 58,
+    "fields": {
+      "name": "TEXAS RANGER TRIVIA"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 290,
+    "fields": {
+      "category": 58,
+      "text": "This legendary martial artist and internet meme icon starred as Cordell Walker in 'Walker, Texas Ranger'.",
+      "answer": "Who is Chuck Norris?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 291,
+    "fields": {
+      "category": 58,
+      "text": "Walker's trusted, tech-savvy younger partner Jimmy Trivette previously played this position in the NFL before injuring his knee.",
+      "answer": "What is a Wide Receiver?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 292,
+    "fields": {
+      "category": 58,
+      "text": "This retired Texas Ranger and seasoned mentor frequently gives Walker advice while cooking up grub at his local bar and grill.",
+      "answer": "Who is C.D. Parker?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 293,
+    "fields": {
+      "category": 58,
+      "text": "Cordell Walker relies heavily on this specific, hard-hitting style of martial arts which Chuck Norris actually founded in real life.",
+      "answer": "What is Chun Kuk Do?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 294,
+    "fields": {
+      "category": 58,
+      "text": "In the 2021 television reboot simply titled 'Walker', this former 'Supernatural' star stepped into the titular boots.",
+      "answer": "Who is Jared Padalecki?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 59,
+    "fields": {
+      "name": "INTO THE NIGHT"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 295,
+    "fields": {
+      "category": 59,
+      "text": "In this high-concept Netflix sci-fi series, a hijacked airplane must constantly fly away from this cosmic threat to survive.",
+      "answer": "What is The Sun?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 296,
+    "fields": {
+      "category": 59,
+      "text": "The initial hijacking of the commercial flight takes off from an international airport located in this European capital city.",
+      "answer": "What is Brussels?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 297,
+    "fields": {
+      "category": 59,
+      "text": "This 2022 Turkish spin-off series focuses on a submarine crew navigating the exact same solar apocalypse.",
+      "answer": "What is Yakamoz S-245?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 298,
+    "fields": {
+      "category": 59,
+      "text": "The series is a thrilling adaptation based on 'The Old Axolotl', a digital sci-fi novel written by this Polish author.",
+      "answer": "Who is Jacek Dukaj?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 299,
+    "fields": {
+      "category": 59,
+      "text": "To protect themselves from cosmic rays during a critical layover, the survivors seek shelter inside this specific type of underground military facility.",
+      "answer": "What is a Bunker?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 60,
+    "fields": {
+      "name": "BLADE THE DAYWALKER"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 300,
+    "fields": {
+      "category": 60,
+      "text": "Wesley Snipes famously portrayed this leather-jacketed Marvel superhero who hunts vampires to avenge his mother.",
+      "answer": "Who is Blade?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 301,
+    "fields": {
+      "category": 60,
+      "text": "Because he is a half-vampire who is completely immune to sunlight, vampires fearfully refer to Blade by this nickname.",
+      "answer": "What is Daywalker?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 302,
+    "fields": {
+      "category": 60,
+      "text": "This grizzled weapons smith and vampire hunter serves as Blade's mentor and surrogate father figure.",
+      "answer": "Who is Abraham Whistler?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 303,
+    "fields": {
+      "category": 60,
+      "text": "In the acclaimed 2002 sequel 'Blade II', this visionary director took over the helm to introduce a mutated breed of vampires called Reapers.",
+      "answer": "Who is Guillermo del Toro?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 304,
+    "fields": {
+      "category": 60,
+      "text": "Blade wields a signature sword forged from this specific precious metal, which happens to be lethal to vampires.",
+      "answer": "What is Silver?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 61,
+    "fields": {
+      "name": "KNIGHT RIDER"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 305,
+    "fields": {
+      "category": 61,
+      "text": "David Hasselhoff plays Michael Knight, a high-tech crimefighter who drives an artificially intelligent, talking sports car named this.",
+      "answer": "What is KITT?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 306,
+    "fields": {
+      "category": 61,
+      "text": "KITT's physical chassis is a heavily modified version of this iconic black General Motors sports car model.",
+      "answer": "What is a Pontiac Firebird Trans Am?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 307,
+    "fields": {
+      "category": 61,
+      "text": "This private crime-fighting justice organization, funded by a wealthy billionaire, employs Michael and builds KITT.",
+      "answer": "What is FLAG (Foundation for Law and Government)?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 308,
+    "fields": {
+      "category": 61,
+      "text": "This actor provided the iconic, sophisticated, uncredited voice of KITT throughout the entire original series.",
+      "answer": "Who is William Daniels?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 309,
+    "fields": {
+      "category": 61,
+      "text": "In season two, Michael faces off against this evil, mustache-twirling clone of himself, who drives an armored truck.",
+      "answer": "Who is Garthe Knight?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 62,
+    "fields": {
+      "name": "THE SIX MILLION DOLLAR MAN"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 310,
+    "fields": {
+      "category": 62,
+      "text": "Lee Majors stars as this astronaut who is rebuilt with high-tech bionic implants following a catastrophic experimental plane crash.",
+      "answer": "Who is Steve Austin?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 311,
+    "fields": {
+      "category": 62,
+      "text": "Steve Austin works as a secret agent for this fictional government intelligence office, known by a 3-letter acronym.",
+      "answer": "What is the OSI (Office of Scientific Intelligence)?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 312,
+    "fields": {
+      "category": 62,
+      "text": "This popular 1976 spin-off series features Steve's injured tennis pro fiancée, Jamie Sommers, getting her own mechanical upgrades.",
+      "answer": "What is The Bionic Woman?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 313,
+    "fields": {
+      "category": 62,
+      "text": "Steve frequently clashes with this massive, hairy cryptid, who turns out to be an alien android operating in the wilderness.",
+      "answer": "What is Bigfoot (or Sasquatch)?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 314,
+    "fields": {
+      "category": 62,
+      "text": "This visionary cybernetics doctor is the mastermind behind the surgical engineering that built Steve's bionic limbs.",
+      "answer": "Who is Dr. Rudy Wells?",
+      "value": 500
+    }
+  },
+  {
+    "model": "jadmin.category",
+    "pk": 63,
+    "fields": {
+      "name": "STAND-UP COMEDY HISTORY"
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 315,
+    "fields": {
+      "category": 63,
+      "text": "This legendary comedian hosted a self-titled 90s sitcom about 'nothing' and is famous for asking 'What's the deal with...?'",
+      "answer": "Who is Jerry Seinfeld?",
+      "value": 100
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 316,
+    "fields": {
+      "category": 63,
+      "text": "This boundary-pushing comic behind 'Seven Words You Can Never Say on Television' was arrested in 1972 for disturbing the peace.",
+      "answer": "Who is George Carlin?",
+      "value": 200
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 317,
+    "fields": {
+      "category": 63,
+      "text": "This fast-talking comic voiced the Genie in 'Aladdin' and got his big break doing manic stand-up routines in San Francisco.",
+      "answer": "Who is Robin Williams?",
+      "value": 300
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 318,
+    "fields": {
+      "category": 63,
+      "text": "This brilliant comic walked away from a $50 million contract for his sketch show to return to raw stand-up comedy and smaller venues.",
+      "answer": "Who is Dave Chappelle?",
+      "value": 400
+    }
+  },
+  {
+    "model": "jadmin.clue",
+    "pk": 319,
+    "fields": {
+      "category": 63,
+      "text": "This pioneering 1960s comic challenged American obscenity laws with his raw, satirical political routines before an early death in 1966.",
+      "answer": "Who is Lenny Bruce?",
+      "value": 500
+    }
+  }
+]

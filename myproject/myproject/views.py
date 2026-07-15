@@ -15,6 +15,9 @@ def about(request):
 def rules(request):
     return render(request, 'rules.html')
 
+def host(request):
+    return render(request, 'host.html')  
+
 def wel_test(request):
     categories = Category.objects.all().order_by('id')  # get categories
     # print(categories)
