@@ -1,9 +1,182 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
 
-{% block title %}
-    HOME
-{% endblock %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
 
-{% block content %}
-    <h1>HOME</h1>
-{% endblock %}
+Admin Home
+
+</title>
+<script src="/static/js/main.js" defer></script>
+
+<link rel="stylesheet" href="/static/css/style.css">
+<style>
+
+table {
+border-collapse: collapse;
+margin: 20px auto;
+background-color: #000000; 
+}
+
+td {
+border: 4px solid #000000; 
+padding: 0;
+}
+
+
+.category {
+width: 150px;
+height: 85px;
+background: #060ce9; 
+color: #FFFFFF;
+font-size: 25px;
+font-weight: 500;
+font-family: 'Impact', 'Arial Black', sans-serif;
+text-transform: uppercase;
+text-align: center;
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 5px;
+box-sizing: border-box;
+}
+
+
+.money {
+width: 150px;
+height: 100px;
+background: #060ce9;
+color: #f1b521; 
+font-size: 42px;
+font-weight: bold;
+font-family: 'Impact', 'Arial Black', sans-serif;
+text-align: center;
+}
+
+.clue {
+width: 150px;
+height: 100px;
+background: #060ce9;
+color: #FFFFFF; 
+font-size: 18px;
+font-family: 'Impact', 'Arial Black', sans-serif;
+text-align: center;
+}
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+</style>
+
+</head>
+<body>
+<div>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/rules">Rules</a> | 
+        <a href="/about">About</a>
+    </nav>
+</div>
+<p>
+    &nbsp;
+</p>
+
+<main>
+
+<table>
+
+<tr>
+<td><div class="category">Ethnic Foods</div></td>
+<td><div class="category">Cars</div></td>
+<td><div class="category">Science</div></td>
+<td><div class="category">Movies</div></td>
+<td><div class="category">Capitals</div></td>
+<td><div class="category">The Beatles</div></td>
+</tr>
+
+<tr>
+<td><div class="money" onclick = "showModal()">$100</div></td>
+<td><div class="money">$100</div></td>
+<td><div class="money">$100</div></td>
+<td><div class="money">$100</div></td>
+<td><div class="money">$100</div></td>
+<td><div class="money">$100</div></td>
+</tr>
+
+<tr>
+<td><div class="money">$200</div></td>
+<td><div class="money">$200</div></td>
+<td><div class="money">$200</div></td>
+<td><div class="money">$200</div></td>
+<td><div class="money">$200</div></td>
+<td><div class="money">$200</div></td>
+</tr>
+
+<tr>
+<td><div class="money">$300</div></td>
+<td><div class="money">$300</div></td>
+<td><div class="money">$300</div></td>
+<td><div class="money">$300</div></td>
+<td><div class="money">$300</div></td>
+<td><div class="money">$300</div></td>
+</tr>
+
+<tr>
+<td><div class="money">$400</div></td>
+<td><div class="money">$400</div></td>
+<td><div class="money">$400</div></td>
+<td><div class="money">$400</div></td>
+<td><div class="money">$400</div></td>
+<td><div class="money">$400</div></td>
+</tr>
+
+<tr>
+<td><div class="money">$500</div></td>
+<td><div class="money">$500</div></td>
+<td><div class="money">$500</div></td>
+<td><div class="money">$500</div></td>
+<td><div class="money">$500</div></td>
+<td><div class="money">$500</div></td>
+</tr>
+</table>
+
+<div id="clue-modal" style="display:none;" class="modal">
+    <div class="modal-content">
+        <h2 id="modal-value"></h2>
+        <p id="modal-text">Loading...</p>
+        <p id="modal-answer"> </p>
+        <button onclick="showAnswer()">Show Answer</button>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+
+</main>
+<script>
+    function showModal() {
+        const modal = document.getElementById("clue-modal");
+        document.getElementById("modal-text").innerText="He was a famous cartoon bunny";
+        document.getElementById("modal-value").innerText="$100";
+        document.getElementById("modal-answer").innerText="";
+        modal.style.display="block";
+    }
+
+    function closeModal() {
+        document.getElementById("clue-modal").style.display = "none";
+    }
+
+    function showAnswer() {
+        document.getElementById("modal-answer").innerText = "Who is Bugs Bunny?";
+    }
+
+</script>
+</body>
+</html>
+

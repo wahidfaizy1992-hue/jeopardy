@@ -11,3 +11,21 @@ class Board(models.Model):
 
     def __str__(self):
         return f"{self.category} - {self.clue} - {self.response} - {self.value}"
+
+class Category(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+class Clue(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='clues')
+    text = models.CharField(max_length=255)
+    answer = models.CharField(max_length=255)
+    value = models.IntegerField()
+
+    class Meta:
+        ordering=['value']   
+
+    def __str__(self):
+        return f"{self.text} - {self.answer} - {self.value}"
