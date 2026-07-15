@@ -25,6 +25,8 @@ urlpatterns = [
     path('', views.homepage),
     path('about/', views.about),
     path('rules/', views.rules),
+    path('host/', views.host),
     path('jadmin/', include('jadmin.urls'))
+  
 ]
 

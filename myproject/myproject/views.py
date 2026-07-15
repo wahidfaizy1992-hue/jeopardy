@@ -9,3 +9,7 @@ def about(request):
 
 def rules(request):
     return render(request, 'rules.html')
+
+def host(request):
+    return render(request, 'host.html')  
+
