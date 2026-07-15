@@ -2,6 +2,7 @@ from django.shortcuts import render
 from jadmin.models import Category
 from jadmin.models import Clue
 from django.http import JsonResponse
+from .forms import DisplayFilterForm
 
 board = {}
 
@@ -14,6 +15,36 @@ def about(request):
 
 def rules(request):
     return render(request, 'rules.html')
+
+def start(request):
+    form = DisplayFilterForm(request.POST or None)
+    context = {'form': form}
+    if request.method == 'POST': 
+        if form.is_valid(): 
+            # Extract the submitted, validated data 
+            cat1 = form.cleaned_data['cat1']
+            cat2 = form.cleaned_data['cat2']
+            cat3 = form.cleaned_data['cat3']
+            cat4 = form.cleaned_data['cat4']
+            cat5 = form.cleaned_data['cat5']
+            cat6 = form.cleaned_data['cat6'] 
+            player1_name = form.cleaned_data['player1_name']
+            player2_name = form.cleaned_data['player2_name']
+            player3_name = form.cleaned_data['player3_name']
+            context['cat1'] = cat1
+            context['cat2'] = cat2
+            context['cat3'] = cat3
+            context['cat4'] = cat4
+            context['cat5'] = cat5
+            context['cat6'] = cat6
+            context['player1_name'] = player1_name
+            context['player2_name'] = player2_name
+            context['player3_name'] = player3_name
+            context['submitted'] = True
+    return render(request, 'wel_test', context)
+
+def new_category(request):
+    return render(request, 'new_category.html')
 
 def host(request):
     return render(request, 'host.html')  
