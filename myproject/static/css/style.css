@@ -13,3 +13,177 @@ nav a { text-decoration: none; }
 nav a:link { color: white; }
 nav a:visited { color: white; }
 nav a:hover { color: white; }
+
+table { margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.clue {     width:150px; 
+            height:110px; 	
+            background:#285DC8; 
+            color:#FFFF00; 
+            font-size:48px;
+            font-weight:bold;
+            padding-top:25px;
+            text-align:center;
+            cursor: pointer;
+}
+div.clue:hover {background:#487DE8;}
+
+.category { width:150px; 
+            height:110px; 	
+            background:#285DC8; 
+            color:#FFFFFF; 
+            font-size:32px;
+            font-weight:bold;
+            padding-top:25px;
+            text-align:center;
+}
+
+/* --- Clue Pop-up Modal --- */
+.modal {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Dims the background board */
+}
+
+.modal-content {
+    background-color: #060ce9;
+    border: 5px solid #f1b521;
+    margin: 10% auto;
+    padding: 40px;
+    width: 60%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(241, 181, 33, 0.4);
+    animation: zoomIn 0.3s ease;
+}
+
+#modal-value {
+    color: #f1b521;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#modal-text, #modal-answer {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.4;
+    margin: 30px 0;
+    letter-spacing: 1px;
+}
+
+.modal-content button {
+    background-color: #f1b521;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-content button:hover {
+    background-color: #ffca43;
+}
+
+/* Quick animation for the modal appearance */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #000033;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .screen {
+        display: none;
+        background: #000066;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,255,0.5);
+        margin-top: 20px;
+    }
+    .active {
+        display: block;
+    }
+    h1 {
+        color: #FFFF00;
+        text-shadow: 2px 2px 4px #000;
+    }
+    button {
+        background-color: #FFFF00;
+        color: black;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px;
+        transition: 0.2s;
+    }
+    button:hover {
+        background-color: #FFCC00;
+        transform: scale(1.05);
+    }
+    .form-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .clue-block {
+        background: #000044;
+        border: 1px solid #FFFF00;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .clue-title {
+        color: #FFFF00;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: left;
+        border-bottom: 1px dashed #FFFF00;
+        padding-bottom: 5px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        color: #FFFF00;
+        margin-bottom: 5px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 2px solid #FFFF00;
+        background: #222;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    .category-grid, .player-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .player-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }

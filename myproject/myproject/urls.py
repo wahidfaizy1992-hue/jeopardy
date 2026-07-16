@@ -25,6 +25,13 @@ urlpatterns = [
     path('', views.homepage),
     path('about/', views.about),
     path('rules/', views.rules),
+    path('host/', views.host),
+    path('start/', views.start),
+    path('new_category/', views.new_category),
+    path('wel_test/', views.wel_test),
+    path('clue/<str:clue_key>/', views.get_clue_detail, name='get_clue'),
+    path('names/', views.get_player_names, name='get_names'),
     path('jadmin/', include('jadmin.urls'))
+  
 ]
 

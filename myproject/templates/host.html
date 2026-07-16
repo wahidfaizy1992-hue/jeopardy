@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Host Game Studio
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h1>Jeopardy Game Studio</h1>
+
+    <!-- SCREEN 1: DASHBOARD -->
+    <div id="screen-dashboard" class="screen active">
+        <button type="button" onclick="showScreen('screen-setup')">Start a Game 🚀</button>
+        <button type="button" onclick="showScreen('screen-create-category')">Create a New Category ➕</button>
+    </div>
+
+  
+
+{% endblock %}
