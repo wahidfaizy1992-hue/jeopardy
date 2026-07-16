@@ -8,7 +8,7 @@ function cClick(c) {
     // this.classList.add('used');
     // this.disabled = true;
 
-    // Fetch the clue data from Django
+    // Fetch the clue data from Django  AJAX
     fetch(`/clue/${c}/`)
         .then(response => response.json())
         .then(data => {
@@ -19,11 +19,20 @@ function cClick(c) {
         });
 }
 
+function getNames() {
+    fetch('/names/')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('player1_name').innerText = data.player1_name;
+            document.getElementById('player2_name').innerText = data.player2_name;
+            document.getElementById('player3_name').innerText = data.player3_name;
+        });
+}
 function closeModal() {
     document.getElementById('clue-modal').style.display = 'none';
 }
 
-function showAnswer() {
+function showAnswer() {  // program stub
     ;
 }
 

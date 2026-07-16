@@ -1,7 +1,7 @@
 from django import forms 
 from jadmin.models import Category
 
-class DisplayFilterForm (forms.Form):
+class DisplayFilterForm(forms.Form):
     player1_name= forms.CharField(
          max_length=30, required=True, label="Player Name", widget=forms.TextInput(attrs={'placeholder': 'Player Name...'}) )
     player2_name= forms.CharField(
