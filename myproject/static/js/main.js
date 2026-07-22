@@ -14,12 +14,16 @@ function cClick(c) {
         .then(data => {
             document.getElementById('modal-value').innerText = `$${data.value}`;
             document.getElementById('modal-text').innerText = data.text;
-            document.getElementById('modal-answer').innerText = data.answer;
+            document.getElementById('modal-answer').innerText = "";
+            clue_value = data.value; 
+            clue_answer = data.answer;
+            clue_key = c;
             modal.style.display = 'block'; // Show the modal
         });
 }
 
 function getNames() {
+    console.log("*** In getNames()")
     fetch('/names/')
         .then(response => response.json())
         .then(data => {
@@ -30,10 +34,11 @@ function getNames() {
 }
 function closeModal() {
     document.getElementById('clue-modal').style.display = 'none';
+    document.getElementById(clue_key).innerText = "";
 }
 
 function showAnswer() {  // program stub
-    ;
+    document.getElementById('modal-answer').innerText = clue_answer;
 }
 
 function showScreen(screenId) {
