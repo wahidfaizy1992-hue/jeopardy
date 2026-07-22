@@ -1,9 +1,197 @@
 {% extends 'layout.html' %}
 
+{% load static %}
+
 {% block title %}
-    About
+    About the Creators
 {% endblock %}
 
 {% block content %}
-    <h1>ABOUT</h1>
+<style>
+    /* Jeopardy Theme Colors & Typography */
+    .jeopardy-wrapper {
+        background-color: #00003c; /* Deep Board Blue */
+        color: #ffffff;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 40px 20px;
+        border-radius: 12px;
+        border: 4px solid #f2c641; /* Jeopardy Gold */
+        max-width: 1200px;
+        margin: 30px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .jeopardy-header {
+        text-align: center;
+        font-family: 'Impact', 'Arial Black', sans-serif;
+        color: #f2c641; /* Gold */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        margin-bottom: 40px;
+        text-shadow: 3px 3px 0px #000;
+    }
+
+    .section-title {
+        color: #f2c641;
+        border-bottom: 3px solid #f2c641;
+        padding-bottom: 8px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .student-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .creator-card {
+        background-color: #060CE9; 
+        border: 3px solid #f2c641;
+        border-radius: 8px;
+        padding: 25px 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .creator-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;      /* Makes it circular */
+    display: block;
+    margin: 0 auto 15px;     /* Centers the image */
+    border: 3px solid #ddd;
+}
+
+    .creator-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px #f2c641;
+    }
+
+    .img-placeholder {
+        width: 100px;
+        height: 100px;
+        background-color: #00003c;
+        border: 2.5px dashed #f2c641;
+        border-radius: 50%;
+        margin: 0 auto 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f2c641;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .creator-name {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .creator-role {
+        font-size: 0.85rem;
+        color: #f2c641;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .creator-bio {
+        font-size: 0.9rem;
+        color: #e0e0e0;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    @media (max-width: 900px) {
+        .student-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 550px) {
+        .student-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="jeopardy-wrapper">
+
+    <h1 class="jeopardy-header">Cleveland Code Academy Cohort 21</h1>
+
+    <div class="section-title">The Instructor</div>
+    <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+        <div class="creator-card" style="width: 280px;">
+            <img src="{% static 'img/wayne.jpg' %}" alt="Wayne" class="creator-photo">
+            <div class="creator-name">Wayne</div>
+            <div class="creator-role">Lead Instructor</div>
+            <p class="creator-bio">I love programming and teaching so this class is the perfect combination.</p>
+        </div>
+    </div>
+
+    <div class="section-title">The Developers</div>
+    <div class="student-grid">
+        <!-- Carma -->
+        <div class="creator-card">
+        <img src="{% static 'img/Carma.jpg' %}" alt="Carmalicia Watley" class="creator-photo">
+            <div class="creator-name">Carmalicia</div>
+            <div class="creator-role">Developer</div>
+            <p class="creator-bio">My name is Carmalicia Watley. With eight years of hands-on CRM experience, 
+                I am transitioning into technology leadership as an aspiring CRM IT Manager. Having mastered 
+                CRM business operations, data workflows, and user strategy, I am currently completing the 
+                intensive Cleveland Codes Software Developers Academy at Tri-C to bridge the gap into IT. 
+                Through this rigorous program, I am mastering modern full-stack development, database management 
+                systems, and programming architecture while earning key technical certifications. 
+                By combining nearly a decade of platform domain knowledge with these newly acquired 
+                engineering skills, I am uniquely positioned to manage, scale, and secure complex enterprise 
+                CRM environments from a technical perspective.</p>
+        </div>
+
+        <!-- Justina -->
+        <div class="creator-card">
+            <img src="{% static 'img/justina.jpg' %}" alt="Justina" class="creator-photo">
+            <div class="creator-name">Justina</div>
+            <div class="creator-role">Developer</div>
+            <p class="creator-bio">After completing this software development bootcamp, I hope to combine my background in 
+                operations leadership with my new technical skills to build innovative software solutions that improve 
+                efficiency and solve real-world business challenges. My goal is to begin my career as a software developer 
+                while continuing to grow into roles where I can bridge the gap between technology 
+                and business strategy, making a meaningful impact through problem-solving and continuous learning.</p>
+        </div>
+
+        <!-- Rosie -->
+        <div class="creator-card">
+            <img src="{% static 'img/rosie.png' %}" alt="Rosie Larrea" class="creator-photo">
+            <div class="creator-name">Rosie</div>
+            <div class="creator-role">Developer</div>
+            <p class="creator-bio">Hi! I’m a manager at the Cleveland Metropolitan School District with over 15 years of experience in educational administration and project management. Recently, I’ve been channeling my passion for problem-solving into full-stack software development. Trained at Tri-C's Cleveland Codes Academy, my toolkit includes Python, Java, HTML/CSS, and database management. I’m looking to take on freelance projects where I can build clean, impactful applications for real-world problems while continuing to grow as a developer."</p>
+        </div>
+
+        <!-- Wahid -->
+        <div class="creator-card">
+            <img src="{% static 'img/Wahid_Photo.jpg' %}" alt="Wahid" class="creator-photo">
+            <div class="creator-name">Wahid</div>
+            <div class="creator-role">Developer</div>
+            <p class="creator-bio">Electrical power engineer with hands-on experience in installation, 
+                testing, maintenance, troubleshooting, and commissioning. Currently expanding my skills 
+                in software development through Cleveland Codes, with training in HTML, CSS, JavaScript, 
+                SQL, and Python. I combine technical engineering experience with growing programming 
+                skills to build practical solutions and solve complex problems.  </p>
+        </div>
+    </div>
+</div>
 {% endblock %}
