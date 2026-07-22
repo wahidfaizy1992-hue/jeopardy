@@ -1,182 +1,153 @@
-<!DOCTYPE html>
+{% extends 'layout.html' %}
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
+{% block title %}
+    Host Game Studio
+{% endblock %}
 
-Admin Home
-
-</title>
-<script src="/static/js/main.js" defer></script>
-
-<link rel="stylesheet" href="/static/css/style.css">
+{% block content %}
 <style>
+    /* Full screen styling with an appealing backdrop image */
+    body {
+        font-family: 'Montserrat', 'Arial Black', sans-serif;
+        background: linear-gradient(rgba(0, 0, 51, 0.85), rgba(0, 0, 102, 0.9)), 
+                    url('https://unsplash.com') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 40px 20px;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        color: #FFFF00;
+        text-shadow: 3px 3px 0px #0000ff, 6px 6px 12px rgba(0,0,0,0.8);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
 
-table {
-border-collapse: collapse;
-margin: 20px auto;
-background-color: #000000; 
-}
+    /* Elegant, glowing screen container */
+    .screen {
+        display: none;
+        background: rgba(0, 0, 102, 0.75);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 15px;
+        border: 3px solid #0000ff;
+        box-shadow: 0 0 25px rgba(0, 0, 255, 0.6), inset 0 0 15px rgba(0, 0, 255, 0.3);
+    }
+    
+    .active {
+        display: block;
+    }
 
-td {
-border: 4px solid #000000; 
-padding: 0;
-}
+    /* Moving Picture Integration: Animated Studio Panel Overlay */
+    .gif-banner {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cotain;
+        opject-poistion: center;
+        border-radius: 8px;
+        border: 2px solid #FFFF00;
+        box-shadow: 0 0 15px rgba(255, 255, 0, 0.4);
+        margin-bottom: 25px;
+    }
 
+    /* Appeal Upgrade: Dashboard visual card grid */
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 20px;
+    }
 
-.category {
-width: 150px;
-height: 85px;
-background: #060ce9; 
-color: #FFFFFF;
-font-size: 25px;
-font-weight: 500;
-font-family: 'Impact', 'Arial Black', sans-serif;
-text-transform: uppercase;
-text-align: center;
+    /* Transform buttons into immersive, glowing action blocks */
+    .dash-card {
+        background: linear-gradient(135deg, #000099, #000044);
+        border: 3px solid #FFFF00;
+        border-radius: 12px;
+        padding: 40px 20px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
 
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 5px;
-box-sizing: border-box;
-}
+    .dash-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(255, 255, 0, 0.4);
+        background: linear-gradient(135deg, #0000cc, #000066);
+    }
 
+    .dash-card .icon {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        display: block;
+        text-shadow: 0 0 10px rgba(255,255,255,0.4);
+    }
 
-.money {
-width: 150px;
-height: 100px;
-background: #060ce9;
-color: #f1b521; 
-font-size: 42px;
-font-weight: bold;
-font-family: 'Impact', 'Arial Black', sans-serif;
-text-align: center;
-}
+    .dash-card span {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-.clue {
-width: 150px;
-height: 100px;
-background: #060ce9;
-color: #FFFFFF; 
-font-size: 18px;
-font-family: 'Impact', 'Arial Black', sans-serif;
-text-align: center;
-}
-
-
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-
+    .dash-card:hover span {
+        color: #FFFF00;
+    }
 </style>
 
-</head>
-<body>
-<div>
-    <nav>
-        <a href="/">Home</a> | 
-        <a href="/rules">Rules</a> | 
-        <a href="/about">About</a>
-    </nav>
-</div>
-<p>
-    &nbsp;
-</p>
+<div class="container">
+    <h1>Jeopardy Game Studio</h1>
 
-<main>
+    <!-- SCREEN 1: DASHBOARD -->
+    <div id="screen-dashboard" class="screen active">
+        
+        <!-- Moving GIF Added Right At The Top of The Main Screen Panel -->
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGV5ZXBpb2l6bXJ0YTNianBtNm1veno2c2Roc3Jjb3diZWVtdHZldCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcKlyVsfMZkRtyZ5Hz/giphy.gif"
+             alt="Studio Stage Animation" 
+             class="gif-banner">
 
-<table>
+        <div class="dashboard-grid">
+            
+            <!-- Upgraded Interactive "Start Game" Card -->
+             <a href= "/start" > 
+                <div class="dash-card" >
+                    <span class="icon">🚀</span>
+                    <span>Start a Game</span>
+                </div>
+            </a>
+            <!-- Upgraded Interactive "Create Category" Card -->
+             <a href= "/new_category" >
+                <div class="dash-card" >
+                    <span class="icon">➕</span>
+                    <span>Create a New Category</span>
+                </div>
+            </a>
 
-<tr>
-<td><div class="category">Ethnic Foods</div></td>
-<td><div class="category">Cars</div></td>
-<td><div class="category">Science</div></td>
-<td><div class="category">Movies</div></td>
-<td><div class="category">Capitals</div></td>
-<td><div class="category">The Beatles</div></td>
-</tr>
-
-<tr>
-<td><div class="money" onclick = "showModal()">$100</div></td>
-<td><div class="money">$100</div></td>
-<td><div class="money">$100</div></td>
-<td><div class="money">$100</div></td>
-<td><div class="money">$100</div></td>
-<td><div class="money">$100</div></td>
-</tr>
-
-<tr>
-<td><div class="money">$200</div></td>
-<td><div class="money">$200</div></td>
-<td><div class="money">$200</div></td>
-<td><div class="money">$200</div></td>
-<td><div class="money">$200</div></td>
-<td><div class="money">$200</div></td>
-</tr>
-
-<tr>
-<td><div class="money">$300</div></td>
-<td><div class="money">$300</div></td>
-<td><div class="money">$300</div></td>
-<td><div class="money">$300</div></td>
-<td><div class="money">$300</div></td>
-<td><div class="money">$300</div></td>
-</tr>
-
-<tr>
-<td><div class="money">$400</div></td>
-<td><div class="money">$400</div></td>
-<td><div class="money">$400</div></td>
-<td><div class="money">$400</div></td>
-<td><div class="money">$400</div></td>
-<td><div class="money">$400</div></td>
-</tr>
-
-<tr>
-<td><div class="money">$500</div></td>
-<td><div class="money">$500</div></td>
-<td><div class="money">$500</div></td>
-<td><div class="money">$500</div></td>
-<td><div class="money">$500</div></td>
-<td><div class="money">$500</div></td>
-</tr>
-</table>
-
-<div id="clue-modal" style="display:none;" class="modal">
-    <div class="modal-content">
-        <h2 id="modal-value"></h2>
-        <p id="modal-text">Loading...</p>
-        <p id="modal-answer"> </p>
-        <button onclick="showAnswer()">Show Answer</button>
-        <button onclick="closeModal()">Close</button>
+        </div>
     </div>
 </div>
 
-
-</main>
 <script>
-    function showModal() {
-        const modal = document.getElementById("clue-modal");
-        document.getElementById("modal-text").innerText="He was a famous cartoon bunny";
-        document.getElementById("modal-value").innerText="$100";
-        document.getElementById("modal-answer").innerText="";
-        modal.style.display="block";
+    // Screen management configuration script
+    function showScreen(screenId) {
+        const screens = document.querySelectorAll('.screen');
+        screens.forEach(screen => screen.classList.remove('active'));
+        
+        const targetScreen = document.getElementById(screenId);
+        if (targetScreen) {
+            targetScreen.classList.add('active');
+        }
     }
-
-    function closeModal() {
-        document.getElementById("clue-modal").style.display = "none";
-    }
-
-    function showAnswer() {
-        document.getElementById("modal-answer").innerText = "Who is Bugs Bunny?";
-    }
-
 </script>
-</body>
-</html>
+{% endblock %}
 
