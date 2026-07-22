@@ -5,5 +5,330 @@
 {% endblock %}
 
 {% block content %}
-    <h1>RULES</h1>
+<style>
+    /* Scoped Container to avoid conflicting with layout.html global styles */
+    .rules-page-wrapper {
+        background-color: #03081e; /* Deep studio night blue */
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        padding: 40px 20px;
+        border-radius: 8px;
+    }
+
+    /* Typography */
+    .rules-page-wrapper h1, 
+    .rules-page-wrapper h2, 
+    .rules-page-wrapper h3 {
+        color: #f6b426; /* Classic Jeopardy gold */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    /* Main Container */
+    .rules-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Header Styles */
+    .rules-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #0f2a6b;
+    }
+
+    .rules-header h1 {
+        font-size: 2.8rem;
+        text-shadow: 0 0 10px rgba(246, 180, 38, 0.4);
+        margin-bottom: 10px;
+    }
+
+    .rules-header p {
+        font-size: 1.2rem;
+        color: #a4b3d6;
+    }
+
+    /* Rule Card Layouts */
+    .rules-card {
+        background-color: #061233; /* Slightly lighter blue card background */
+        border: 2px solid #0b225c;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .rules-card:hover {
+        transform: translateY(-2px);
+        border-color: #0070f3; /* Electric blue glow on hover */
+        box-shadow: 0 6px 20px rgba(0, 112, 243, 0.2);
+    }
+
+    .rules-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        border-left: 4px solid #f6b426;
+        padding-left: 12px;
+        display: flex;
+        align-items: center;
+        text-align: left; /* Aligns card headers to the left */
+    }
+
+    /* Force specific text content lists to align left */
+    .align-left-content ol,
+    .align-left-content ul,
+    .align-left-content p {
+        text-align: left;
+    }
+
+    /* Lists Base Styling */
+    .rules-page-wrapper ul, 
+    .rules-page-wrapper ol {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .rules-page-wrapper li {
+        margin-bottom: 10px;
+        color: #e2e8f0;
+    }
+
+    .rules-page-wrapper li strong {
+        color: #ffffff;
+    }
+
+    /* Grid for Point values */
+    .value-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .value-tag {
+        background: #0f2a6b;
+        color: #f6b426;
+        text-align: center;
+        padding: 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border: 1px solid #1c459e;
+    }
+
+    /* Turn Order Visual Sequence */
+    .flow-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #040d24;
+        padding: 20px;
+        border-radius: 6px;
+        margin-top: 15px;
+        border: 1px dashed #0f2a6b;
+    }
+
+    .flow-step {
+        font-weight: bold;
+        color: #ffffff;
+        background: #0f2a6b;
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid #0070f3;
+    }
+
+    .flow-arrow {
+        color: #f6b426;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    /* Scoring Blocks */
+    .scoring-block {
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .score-box {
+        flex: 1;
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    .score-box.positive {
+        background-color: rgba(40, 167, 69, 0.1);
+        border: 1px solid #28a745;
+    }
+
+    .score-box.negative {
+        background-color: rgba(220, 53, 69, 0.1);
+        border: 1px solid #dc3545;
+    }
+
+    .score-box h3 {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+
+    .score-box.positive h3 { color: #28a745; }
+    .score-box.negative h3 { color: #dc3545; }
+
+    /* Highlight box for Timer & Sportsmanship */
+    .highlight-box {
+        background: linear-gradient(135deg, #091d4a 0%, #061233 100%);
+        border-left: 5px solid #0070f3;
+        padding: 20px;
+        border-radius: 0 8px 8px 0;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    /* Footer */
+    .rules-footer {
+        text-align: center;
+        margin-top: 40px;
+        color: #5d72a3;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Breakdowns */
+    @media (max-width: 600px) {
+        .flow-container {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .flow-arrow {
+            transform: rotate(90deg);
+            margin: 5px 0;
+        }
+        .scoring-block {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+</style>
+
+<div class="rules-page-wrapper">
+    <div class="rules-container">
+        
+        <!-- Header -->
+        <header class="rules-header">
+            <h1>JEOPARDY! GAME RULES</h1>
+            <p>Welcome to Jeopardy Game Studio!</p>
+            <p style="margin-top: 10px; color: #ffffff;">Three players compete by answering clues from six categories. The player with the highest score at the end of the game wins.</p>
+        </header>
+
+        <!-- Card 1: Before the Game -->
+        <div class="rules-card align-left-content">
+            <h2>Before the Game Begins</h2>
+            <ol>
+                <li>Enter the names of the three players.</li>
+                <li>Select six different categories.</li>
+                <li>Click <strong>Start Game</strong>.</li>
+            </ol>
+            <p style="margin-top: 15px; font-weight: bold; color: #a4b3d6;">Each category contains five clues worth:</p>
+            <div class="value-grid">
+                <div class="value-tag">$100</div>
+                <div class="value-tag">$200</div>
+                <div class="value-tag">$300</div>
+                <div class="value-tag">$400</div>
+                <div class="value-tag">$500</div>
+            </div>
+            <p style="margin-top: 12px; font-size: 0.9rem; font-style: italic; color: #8a9cbd;">*Note: Higher-value clues are generally more difficult.</p>
+        </div>
+
+        <!-- Card 2: How to Play -->
+        <div class="rules-card align-left-content">
+            <h2>How to Play</h2>
+            <ol>
+                <li><strong>Player 1</strong> begins the game by selecting any clue from any category.</li>
+                <li>The selected clue is displayed, and the <strong>timer starts</strong>.</li>
+                <li>The current player must answer the clue before the timer expires.</li>
+                <li>The host marks the answer as <strong>Correct</strong> or <strong>Incorrect</strong>.</li>
+                <li>The player's score is updated automatically.</li>
+                <li>The clue is removed from the board and cannot be selected again.</li>
+                <li>The turn passes to the next player.</li>
+            </ol>
+        </div>
+
+        <!-- Card 3: Turn Order -->
+        <div class="rules-card">
+            <h2>Turn Order</h2>
+            <p style="text-align: center;">The turns continue in this order until all clues have been played:</p>
+            <div class="flow-container">
+                <div class="flow-step">Player 1</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">Player 2</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">Player 3</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">Repeat</div>
+            </div>
+        </div>
+
+        <!-- Card 4: Scoring -->
+        <div class="rules-card">
+            <h2>Scoring</h2>
+            <div class="scoring-block">
+                <div class="score-box positive" style="text-align: left;">
+                    <h3>Correct Answer</h3>
+                    <p>Adds the clue's value to the player's score.</p>
+                    <p style="margin-top: 8px; font-weight: bold; color: #28a745;">Example: +$300 points</p>
+                </div>
+                <div class="score-box negative" style="text-align: left;">
+                    <h3>Incorrect Answer</h3>
+                    <p>Subtracts the clue's value from the player's score.</p>
+                    <p style="margin-top: 8px; font-weight: bold; color: #dc3545;">Example: &minus;$400 points</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Timer & Used Clues -->
+        <div class="rules-card">
+            <h2>Timer & Played Clues</h2>
+            
+            <div class="highlight-box">
+                <h3 style="color: #0070f3; margin-bottom: 8px; font-size: 1.1rem;">⏱️ The Countdown</h3>
+                <p>Each clue has a countdown timer. Players must answer before time expires. If the timer reaches zero before an answer is given, the turn ends immediately.</p>
+            </div>
+
+            <div class="highlight-box" style="border-left-color: #f6b426; margin-top: 15px;">
+                <h3 style="color: #f6b426; margin-bottom: 8px; font-size: 1.1rem;">🔒 Spent Clues</h3>
+                <p>After a clue has been played, it disappears from the board and cannot be selected again for the remainder of the match.</p>
+            </div>
+        </div>
+
+        <!-- Card 6: Winning -->
+        <div class="rules-card align-left-content">
+            <h2>Winning the Game</h2>
+            <ul>
+                <li>The game ends when all <strong>30 clues</strong> have been played.</li>
+                <li>The player with the <strong>highest total score</strong> is declared the winner!</li>
+                <li>If two or more players finish with the same score, the game ends in a tie unless the host chooses to play a tie-breaker question.</li>
+            </ul>
+        </div>
+
+        <!-- Card 7: Good Sportsmanship -->
+        <div class="rules-card align-left-content" style="border-color: #f6b426;">
+            <h2 style="color: #f6b426;">Good Sportsmanship</h2>
+            <ul style="list-style-type: '⚡  ';">
+                <li>Wait for your turn.</li>
+                <li>Do not interrupt another player's answer.</li>
+                <li>Respect the host's final decisions.</li>
+                <li><strong>Enjoy the game and have fun!</strong></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="rules-footer">
+            <p>Cleveland Codes Academy Cohort 21 &copy; 2026 </p>
+        </footer>
+
+    </div>
+</div>
 {% endblock %}
