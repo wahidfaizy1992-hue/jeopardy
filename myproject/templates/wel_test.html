@@ -1,69 +1,228 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    WEL Test Board
+    Jeopardy
 {% endblock %}
 
 {% block content %}
-    <table>   
-	<tr>
-	   <td><div class="category" id="cat1">{{ cats.0 }}</div></td>
-       <td><div class="category" id="cat2">{{ cats.1 }}</div></td>
-       <td><div class="category" id="cat3">{{ cats.2 }}</div></td>
-       <td><div class="category" id="cat4">{{ cats.3 }}</div></td>
-       <td><div class="category" id="cat5">{{ cats.4 }}</div></td>
-       <td><div class="category" id="cat6">{{ cats.5 }}</div></td>
-	</tr>
-    <tr>     <!-- id and cClick argument =  key_clueNum_categoryNum board['key']['value']  -->
-	   <td><div class="clue" id="1_1" onclick="cClick('1_1')">${{board.key_1_1.value}}</div></td>
-	   <td><div class="clue" id="1_2" onclick="cClick('1_2')">${{board.key_1_2.value}}</div></td>
-	   <td><div class="clue" id="1_3" onclick="cClick('1_3')">${{board.key_1_3.value}}</div></td>
-	   <td><div class="clue" id="1_4" onclick="cClick('1_4')">${{board.key_1_4.value}}</div></td>
-       <td><div class="clue" id="1_5" onclick="cClick('1_5')">${{board.key_1_5.value}}</div></td>
-       <td><div class="clue" id="1_6" onclick="cClick('1_6')">${{board.key_1_6.value}}</div></td>
-	</tr>
-	<tr>
-	   <td><div class="clue" id="2_1" onclick="cClick('2_1')">${{board.key_2_1.value}}</div></td>
-	   <td><div class="clue" id="2_2" onclick="cClick('2_2')">${{board.key_2_2.value}}</div></td>
-	   <td><div class="clue" id="2_3" onclick="cClick('2_3')">${{board.key_2_3.value}}</div></td>
-	   <td><div class="clue" id="2_4" onclick="cClick('2_4')">${{board.key_2_4.value}}</div></td>
-       <td><div class="clue" id="2_5" onclick="cClick('2_5')">${{board.key_2_5.value}}</div></td>
-       <td><div class="clue" id="2_6" onclick="cClick('2_6')">${{board.key_2_6.value}}</div></td>
-	</tr>
-	<tr>
-	   <td><div class="clue" id="3_1" onclick="cClick('3_1')">${{board.key_3_1.value}}</div></td>
-	   <td><div class="clue" id="3_2" onclick="cClick('3_2')">${{board.key_3_2.value}}</div></td>
-	   <td><div class="clue" id="3_3" onclick="cClick('3_3')">${{board.key_3_3.value}}</div></td>
-	   <td><div class="clue" id="3_4" onclick="cClick('3_4')">${{board.key_3_4.value}}</div></td>
-       <td><div class="clue" id="3_5" onclick="cClick('3_5')">${{board.key_3_5.value}}</div></td>
-       <td><div class="clue" id="3_6" onclick="cClick('3_6')">${{board.key_3_6.value}}</div></td>
-	</tr>
-	<tr>
-	   <td><div class="clue" id="4_1" onclick="cClick('4_1')">${{board.key_4_1.value}}</div></td>
-	   <td><div class="clue" id="4_2" onclick="cClick('4_2')">${{board.key_4_2.value}}</div></td>
-	   <td><div class="clue" id="4_3" onclick="cClick('4_3')">${{board.key_4_3.value}}</div></td>
-	   <td><div class="clue" id="4_4" onclick="cClick('4_4')">${{board.key_4_4.value}}</div></td>
-       <td><div class="clue" id="4_5" onclick="cClick('4_5')">${{board.key_4_5.value}}</div></td>
-       <td><div class="clue" id="4_6" onclick="cClick('4_6')">${{board.key_4_6.value}}</div></td>
-	</tr>
-    <tr>
-	   <td><div class="clue" id="5_1" onclick="cClick('5_1')">${{board.key_5_1.value}}</div></td>
-	   <td><div class="clue" id="5_2" onclick="cClick('5_2')">${{board.key_5_2.value}}</div></td>
-	   <td><div class="clue" id="5_3" onclick="cClick('5_3')">${{board.key_5_3.value}}</div></td>
-	   <td><div class="clue" id="5_4" onclick="cClick('5_4')">${{board.key_5_4.value}}</div></td>
-       <td><div class="clue" id="5_5" onclick="cClick('5_5')">${{board.key_5_5.value}}</div></td>
-       <td><div class="clue" id="5_6" onclick="cClick('5_6')">${{board.key_5_6.value}}</div></td>
-	</tr>
-</table>
+<style>
+    /* Main flex wrapper spanning full width */
+    .game-container {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    /* Dedicated static layout dimensions for your Scoreboard */
+    .scoreboard-panel {
+        flex: 0 0 250px; /* Slightly wider to easily fit text and buttons together */
+        background-color: #000044;
+        border: 2px solid #FFFF00;
+        border-radius: 5px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
 
-<div id="player_names">
-	<table>
+    .scoreboard-panel h3 {
+        color: #FFFF00;
+        margin-top: 0;
+        text-align: center;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .scoreboard-panel table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0; 
+    }
+
+    .scoreboard-panel th, .scoreboard-panel td {
+        padding: 10px 5px;
+        text-align: left;
+        border-bottom: 1px dashed #FFFF00;
+        color: white;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .scoreboard-panel th {
+        color: #FFFF00;
+        font-weight: bold;
+    }
+
+    /* Score calculation button styling */
+    .score-btn {
+        background-color: #FFFF00;
+        color: black;
+        border: none;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+        margin: 0 2px;
+        padding: 0;
+        line-height: 25px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .score-btn:hover {
+        background-color: #FFCC00;
+    }
+
+    .score-btn.minus {
+        background-color: #ff4444;
+        color: white;
+    }
+
+    .score-btn.minus:hover {
+        background-color: #cc0000;
+    }
+
+    /* Board container that absorbs remaining horizontal pixels */
+    .board-panel {
+        flex: 1;
+        min-width: 0; 
+    }
+
+    /* Force the board table layout structure to dynamically fill space */
+    .board-panel table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 8px;
+        margin-top: 0; 
+    }
+
+    .board-panel td {
+        padding: 0;
+    }
+
+    /* Overwrite your static CSS file's 150px restrictions to make them responsive */
+    .board-panel .category, 
+    .board-panel .clue {
+        width: 100% !important; 
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0 !important; 
+    }
+
+    /* Handle word clipping inside labels */
+    .board-panel .category {
+        font-size: clamp(14px, 1.8vw, 24px); 
+        line-height: 1.2;
+        padding: 5px !important;
+        overflow: hidden;
+    }
+
+    .board-panel .clue {
+        font-size: clamp(20px, 3.5vw, 48px); 
+    }
+</style>
+
+<div class="game-container">
+    <!-- Left Hand Side: Players Points Table -->
+    <div class="scoreboard-panel">
+        <h3>Scores</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Points</th>
+                    <th>Adjust</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span id="player1_name">PLAYER 1</span></td>
+                    <td>$<span id="player1_score">0</span></td>
+                    <td>
+                        <button class="score-btn" onclick="score_plus(1)">+</button>
+                        <button class="score-btn minus" onclick="score_minus(1)">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span id="player2_name">PLAYER 2</span></td>
+                    <td>$<span id="player2_score">0</span></td>
+                    <td>
+                        <button class="score-btn" onclick="score_plus(2)">+</button>
+                        <button class="score-btn minus" onclick="score_minus(2)">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span id="player3_name">PLAYER 3</span></td>
+                    <td>$<span id="player3_score">0</span></td>
+                    <td>
+                        <button class="score-btn" onclick="score_plus(3)">+</button>
+                        <button class="score-btn minus" onclick="score_minus(3)">-</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+	<!-- right hand side -->
+	<div class="board-panel">
+		<table>   
 		<tr>
-			<td><span id="player1_name">PLAYER 1</span></td><td><span id="player1_score">$0</span></td>
-			<td><span id="player2_name">PLAYER 2</span></td><td><span id="player2_score">$0</span></td>
-			<td><span id="player3_name">PLAYER 3</span></td><td><span id="player3_score">$0</span></td>
+		<td><div class="category" id="cat1">{{ cats.0 }}</div></td>
+		<td><div class="category" id="cat2">{{ cats.1 }}</div></td>
+		<td><div class="category" id="cat3">{{ cats.2 }}</div></td>
+		<td><div class="category" id="cat4">{{ cats.3 }}</div></td>
+		<td><div class="category" id="cat5">{{ cats.4 }}</div></td>
+		<td><div class="category" id="cat6">{{ cats.5 }}</div></td>
 		</tr>
-	</table>	
+		<tr>     <!-- id and cClick argument =  clueNum_categoryNum board['key']['value']  -->
+		<td><div class="clue" id="1_1" onclick="cClick('1_1')">${{board.key_1_1.value}}</div></td>
+		<td><div class="clue" id="1_2" onclick="cClick('1_2')">${{board.key_1_2.value}}</div></td>
+		<td><div class="clue" id="1_3" onclick="cClick('1_3')">${{board.key_1_3.value}}</div></td>
+		<td><div class="clue" id="1_4" onclick="cClick('1_4')">${{board.key_1_4.value}}</div></td>
+		<td><div class="clue" id="1_5" onclick="cClick('1_5')">${{board.key_1_5.value}}</div></td>
+		<td><div class="clue" id="1_6" onclick="cClick('1_6')">${{board.key_1_6.value}}</div></td>
+		</tr>
+		<tr>
+		<td><div class="clue" id="2_1" onclick="cClick('2_1')">${{board.key_2_1.value}}</div></td>
+		<td><div class="clue" id="2_2" onclick="cClick('2_2')">${{board.key_2_2.value}}</div></td>
+		<td><div class="clue" id="2_3" onclick="cClick('2_3')">${{board.key_2_3.value}}</div></td>
+		<td><div class="clue" id="2_4" onclick="cClick('2_4')">${{board.key_2_4.value}}</div></td>
+		<td><div class="clue" id="2_5" onclick="cClick('2_5')">${{board.key_2_5.value}}</div></td>
+		<td><div class="clue" id="2_6" onclick="cClick('2_6')">${{board.key_2_6.value}}</div></td>
+		</tr>
+		<tr>
+		<td><div class="clue" id="3_1" onclick="cClick('3_1')">${{board.key_3_1.value}}</div></td>
+		<td><div class="clue" id="3_2" onclick="cClick('3_2')">${{board.key_3_2.value}}</div></td>
+		<td><div class="clue" id="3_3" onclick="cClick('3_3')">${{board.key_3_3.value}}</div></td>
+		<td><div class="clue" id="3_4" onclick="cClick('3_4')">${{board.key_3_4.value}}</div></td>
+		<td><div class="clue" id="3_5" onclick="cClick('3_5')">${{board.key_3_5.value}}</div></td>
+		<td><div class="clue" id="3_6" onclick="cClick('3_6')">${{board.key_3_6.value}}</div></td>
+		</tr>
+		<tr>
+		<td><div class="clue" id="4_1" onclick="cClick('4_1')">${{board.key_4_1.value}}</div></td>
+		<td><div class="clue" id="4_2" onclick="cClick('4_2')">${{board.key_4_2.value}}</div></td>
+		<td><div class="clue" id="4_3" onclick="cClick('4_3')">${{board.key_4_3.value}}</div></td>
+		<td><div class="clue" id="4_4" onclick="cClick('4_4')">${{board.key_4_4.value}}</div></td>
+		<td><div class="clue" id="4_5" onclick="cClick('4_5')">${{board.key_4_5.value}}</div></td>
+		<td><div class="clue" id="4_6" onclick="cClick('4_6')">${{board.key_4_6.value}}</div></td>
+		</tr>
+		<tr>
+		<td><div class="clue" id="5_1" onclick="cClick('5_1')">${{board.key_5_1.value}}</div></td>
+		<td><div class="clue" id="5_2" onclick="cClick('5_2')">${{board.key_5_2.value}}</div></td>
+		<td><div class="clue" id="5_3" onclick="cClick('5_3')">${{board.key_5_3.value}}</div></td>
+		<td><div class="clue" id="5_4" onclick="cClick('5_4')">${{board.key_5_4.value}}</div></td>
+		<td><div class="clue" id="5_5" onclick="cClick('5_5')">${{board.key_5_5.value}}</div></td>
+		<td><div class="clue" id="5_6" onclick="cClick('5_6')">${{board.key_5_6.value}}</div></td>
+		</tr>
+	</table>
+</div>
 </div>
 
 <div id="clue-modal" style="display:none;" class="modal">
@@ -77,8 +236,38 @@
 </div>
 
 <script>
-	window.onload = () {
+	// some global variables
+	clue_value = 0;
+	clue_answer = "";
+	player1_score = 0;
+	player2_score = 0;
+	player3_score = 0;
+	window.onload = function() {
 		names = getNames();
+	}
+	function score_plus(player) {
+		if (player==1) {
+			player1_score += clue_value;
+			document.getElementById("player1_score").innerText = player1_score; 
+		} else if (player==2) {
+			player2_score += clue_value;
+			document.getElementById("player2_score").innerText = player2_score; 
+		} else if (player==3) {
+			player3_score += clue_value;
+			document.getElementById('player3_score').innerText = player3_score;
+		}
+	}
+	function score_minus(player) {
+		if (player==1) {
+			player1_score -= clue_value;
+			document.getElementById("player1_score").innerText = player1_score; 
+		} else if (player==2) {
+			player2_score -= clue_value;
+			document.getElementById("player2_score").innerText = player2_score; 
+		} else if (player==3) {
+			player3_score -= clue_value;
+			document.getElementById("player3_score").innerText = player3_score;
+		}
 	}
 </script>
 {% endblock %}
