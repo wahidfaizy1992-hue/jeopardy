@@ -5,17 +5,146 @@
 {% endblock %}
 
 {% block content %}
+<style>
+    /* Full screen styling with an appealing backdrop image */
+    body {
+        font-family: 'Montserrat', 'Arial Black', sans-serif;
+        background: linear-gradient(rgba(0, 0, 51, 0.85), rgba(0, 0, 102, 0.9)), 
+                    url('https://unsplash.com') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 40px 20px;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        color: #FFFF00;
+        text-shadow: 3px 3px 0px #0000ff, 6px 6px 12px rgba(0,0,0,0.8);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
 
+    /* Elegant, glowing screen container */
+    .screen {
+        display: none;
+        background: rgba(0, 0, 102, 0.75);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 15px;
+        border: 3px solid #0000ff;
+        box-shadow: 0 0 25px rgba(0, 0, 255, 0.6), inset 0 0 15px rgba(0, 0, 255, 0.3);
+    }
+    
+    .active {
+        display: block;
+    }
+
+    /* Moving Picture Integration: Animated Studio Panel Overlay */
+    .gif-banner {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cotain;
+        opject-poistion: center;
+        border-radius: 8px;
+        border: 2px solid #FFFF00;
+        box-shadow: 0 0 15px rgba(255, 255, 0, 0.4);
+        margin-bottom: 25px;
+    }
+
+    /* Appeal Upgrade: Dashboard visual card grid */
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    /* Transform buttons into immersive, glowing action blocks */
+    .dash-card {
+        background: linear-gradient(135deg, #000099, #000044);
+        border: 3px solid #FFFF00;
+        border-radius: 12px;
+        padding: 40px 20px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .dash-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(255, 255, 0, 0.4);
+        background: linear-gradient(135deg, #0000cc, #000066);
+    }
+
+    .dash-card .icon {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        display: block;
+        text-shadow: 0 0 10px rgba(255,255,255,0.4);
+    }
+
+    .dash-card span {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .dash-card:hover span {
+        color: #FFFF00;
+    }
+</style>
 
 <div class="container">
     <h1>Jeopardy Game Studio</h1>
 
     <!-- SCREEN 1: DASHBOARD -->
     <div id="screen-dashboard" class="screen active">
-        <button type="button" onclick="showScreen('screen-setup')">Start a Game 🚀</button>
-        <button type="button" onclick="showScreen('screen-create-category')">Create a New Category ➕</button>
+        
+        <!-- Moving GIF Added Right At The Top of The Main Screen Panel -->
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnE4djJ1MDh3dzQ3b2RyOWlvNGNzYWp6bHJyamVnNjR1NTNpMThkOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f9q5SuOF35KE9DY16S/giphy.gif"
+             alt="Studio Stage Animation" 
+             class="gif-banner">
+
+        <div class="dashboard-grid">
+            
+            <!-- Upgraded Interactive "Start Game" Card -->
+            <div class="dash-card" onclick="showScreen('screen-setup')">
+                <span class="icon">🚀</span>
+                <span>Start a Game</span>
+            </div>
+
+            <!-- Upgraded Interactive "Create Category" Card -->
+            <div class="dash-card" onclick="showScreen('screen-create-category')">
+                <span class="icon">➕</span>
+                <span>Create a New Category</span>
+            </div>
+
+        </div>
     </div>
+</div>
 
-  
-
+<script>
+    // Screen management configuration script
+    function showScreen(screenId) {
+        const screens = document.querySelectorAll('.screen');
+        screens.forEach(screen => screen.classList.remove('active'));
+        
+        const targetScreen = document.getElementById(screenId);
+        if (targetScreen) {
+            targetScreen.classList.add('active');
+        }
+    }
+</script>
 {% endblock %}
+
