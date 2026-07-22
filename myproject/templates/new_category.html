@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block content %}
- <!-- SCREEN 3: CREATE A NEW CATEGORY -->
+ <!-- CREATE A NEW CATEGORY -->
     <div id="screen-create-category" class="screen active">
         <h2>Create a New Category</h2>
-        <form method="POST" action="">
+        <form method="POST" action="/new_category/">
             {% csrf_token %}
             
             <div class="form-group">
                 <label for="category-name">Category Title:</label>
-                <input type="text" id="category-name" name="category_title" required placeholder="Enter category title (e.g., World Capitals)...">
+                <input type="text" id="category-name" name="category_name" required placeholder="Enter category title (e.g., World Capitals)...">
             </div>
 
             <h3 style="text-align: left; color: #FFFF00; margin-top: 25px;">Enter Clues</h3>
@@ -88,4 +88,76 @@
         </form>
     </div>
 </div>
+
+<style>
+    /* 1. Turn the form into a flexible multi-column grid layout */
+    form {
+        max-width: 1400px;
+        margin: 0 auto !important;
+        padding: 20px;
+        
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        column-gap: 25px;
+        row-gap: 20px;
+    }
+
+    /* 2. Force the Category Title container to span across the top and center text */
+    form > h2, 
+    form > h3,
+    form > p:nth-of-type(1) { 
+        grid-column: 1 / -1 !important; 
+        text-align: center !important;
+        width: 100% !important;
+        display: block !important;
+        margin: 0 auto 15px auto !important;
+    }
+
+    /* 3. Force the Category Title INPUT box to center itself perfectly */
+    form > p:nth-of-type(1) input[type="text"],
+    form input[name*="title"], 
+    form input[name*="category"] {
+        display: block !important;
+        margin: 10px auto !important; /* Forces left and right margins to be equal */
+        width: 100% !important;
+        max-width: 550px !important;  /* Shortens the box width */
+        box-sizing: border-box !important;
+        text-align: left;             /* Keeps the placeholder text left-aligned inside the box */
+    }
+
+    /* 4. Target the individual clue container boxes to sit side-by-side */
+    form fieldset,
+    form > p:not(:nth-of-type(1)) { 
+        box-sizing: border-box;
+        padding: 15px;
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    /* 5. Style the input boxes and textareas inside the clue columns */
+    form p input[type="text"],
+    form p textarea {
+        width: 100% !important;
+        max-width: 100% !important; 
+        box-sizing: border-box !important;
+        margin: 8px 0 !important;
+        padding: 10px;
+    }
+
+    /* 6. Clean up textarea height */
+    form p textarea {
+        height: 80px; 
+        resize: vertical;
+    }
+
+    /* 7. Center the submit button at the very bottom */
+    form button[type="submit"] {
+        grid-column: 1 / -1 !important;
+        margin: 20px auto 0 auto !important;
+        padding: 12px 40px;
+        max-width: 250px;
+        display: block;
+        cursor: pointer;
+    }
+</style>
 {% endblock %}
